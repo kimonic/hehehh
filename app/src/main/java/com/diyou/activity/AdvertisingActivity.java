@@ -15,10 +15,12 @@ import android.widget.TextView;
 import com.diyou.base.BaseActivity;
 import com.diyou.util.StringUtils;
 import com.diyou.v5yibao.R;
-
+/**展示网站协议activity*/
 public class AdvertisingActivity extends BaseActivity implements OnClickListener
 {
+    /**加载时进度条*/
     private ProgressBar pb;
+    /**标题*/
     private TextView mTvTitle;
     private String action;
 
@@ -30,6 +32,7 @@ public class AdvertisingActivity extends BaseActivity implements OnClickListener
         setContentView(R.layout.activity_advertising);
         initActionBar();
         action = getIntent().getStringExtra("action");
+        //多处复用的activity,根据传值设置标题
         if("newForecast".equals(action)){
             mTvTitle.setText(R.string.ad_title_new_forecast);
         }else if("creditorAgreement".equals(action)){
@@ -59,13 +62,14 @@ public class AdvertisingActivity extends BaseActivity implements OnClickListener
             @Override  
             public boolean shouldOverrideUrlLoading(WebView view, String url) {  
                 //返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
-                view.loadUrl(url);
+                view.loadUrl(url);//本应用内打开网页
                 return true;  
             }  
         });  
         webView.loadUrl(getIntent().getStringExtra("url"));
     }
 
+    /**初始化标题栏*/
     private void initActionBar()
     {
         mTvTitle = (TextView) findViewById(R.id.title_name);
@@ -78,6 +82,7 @@ public class AdvertisingActivity extends BaseActivity implements OnClickListener
         @Override
         public void onProgressChanged(WebView view, int newProgress)
         {
+            //加载进度显示
             pb.setMax(100);
             if (newProgress < 100)
             {
@@ -99,6 +104,7 @@ public class AdvertisingActivity extends BaseActivity implements OnClickListener
         @Override
         public void onReceivedTitle(WebView view, String title) {
             super.onReceivedTitle(view, title);
+            //设置标题
             if (StringUtils.isEmpty(action)) {
                 mTvTitle.setText(title);
             }
@@ -109,7 +115,7 @@ public class AdvertisingActivity extends BaseActivity implements OnClickListener
     {
         switch (v.getId())
         {
-        case R.id.title_back:
+        case R.id.title_back://退出
             finish();
             break;
 

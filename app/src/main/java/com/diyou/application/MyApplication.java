@@ -35,54 +35,89 @@ import android.os.CountDownTimer;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-public class MyApplication extends Application
-{
+public class MyApplication extends Application {
 
     public static boolean lockActivityIstThere = false;
     public static MyApplication app = null;
     private ListCreditorRightsTransferFragment listCreditorRightsTransferFragment;
+    /**
+     * 主页fragment,来自mainactivity
+     */
     private HomeFragment FirstFragment;
+    /**
+     * 我要投资fragment,来自mainactivity
+     */
     private InvestmentFragment SecondFragment;
+    /**
+     * 个人中心fragment,来自mainactivity
+     */
     private PersonalCenterFragment ThirdFragment;
+    /**
+     * 更多fragment,来自mainactivity
+     */
     private MoreFragment FourthFragment;
+
     private InvestmentDetailsActivity investmentDetailsActivity;
     private CreditorRightsDetailsActivity creditorRightsDetailsActivity;
     private TheTenderActivity tenderActivity;
+    /**
+     * 未登录activity
+     */
     private BeforeLoginActivity beforeLoginActivity;
+    /**
+     * 登陆activity
+     */
     private LoginActivity loginActivity;
+    /**
+     * 注册用户activity
+     */
     private RegisteredActivity registeredActivity;
     private RetrievePasswordActivity retrievePasswordActivity;
     private BankCardManagerActivity bankCardManagerActivity;
 
+    /**
+     * 登陆状态
+     */
     public static boolean isLogin = false;
+    /**
+     * 锁屏 状态
+     */
     public static boolean isLock = false;
+    /**
+     * 倒计时状态
+     */
     public static boolean isCountDownTimerStart = false;
     public static boolean isOnClickLockKey = false;
     public static boolean isActive = true;
+    /**
+     * 状态栏通知管理器
+     */
     private NotificationManager mNotificationManager;
+    /**
+     * 通知构建
+     */
     private NotificationCompat.Builder mBuilder;
     private int time = 30000;
 
-    public CountDownTimer timer = new CountDownTimer(30000, 1000)
-    {
+    public CountDownTimer timer = new CountDownTimer(30000, 1000) {
 
         @Override
-        public void onTick(long millisUntilFinished)
-        {
+        public void onTick(long millisUntilFinished) {
             time = (int) millisUntilFinished;
             Log.e("onTick", time / 1000 + "");
         }
 
         @Override
-        public void onFinish()
-        {
+        public void onFinish() {
             time = 0;
         }
 
     };
 
-    public void RemovalGestures()
-    {
+    /**
+     * 移除手势
+     */
+    public void RemovalGestures() {
         isLogin = false;
         isLock = false;
         isCountDownTimerStart = false;
@@ -92,8 +127,7 @@ public class MyApplication extends Application
     }
 
     @Override
-    public void onCreate()
-    {
+    public void onCreate() {
         Global.setApplicationContext(this);
         CreateCode.initCreatCode(this);
         isLogin = UserConfig.getInstance().isLogin(this);
@@ -108,160 +142,169 @@ public class MyApplication extends Application
     /**
      * 初始化用到的通知服务
      */
-    private void initNotifyService()
-    {
+    private void initNotifyService() {
         mNotificationManager = (NotificationManager) getSystemService(
                 NOTIFICATION_SERVICE);
     }
 
-    private void initService()
-    {
+    private void initService() {
         Intent localIntent = new Intent();
         localIntent.setClass(this, MyService.class); // 启动SERVICE
         startService(localIntent);
     }
 
-    public synchronized static MyApplication getInstance()
-    {
+    /**
+     * 单例
+     */
+    public synchronized static MyApplication getInstance() {
         return app;
     }
 
-    public ListCreditorRightsTransferFragment getListCreditorRightsTransferFragment()
-    {
+    /**
+     * 列表债权人权利转让
+     *
+     * @return ??
+     */
+    public ListCreditorRightsTransferFragment getListCreditorRightsTransferFragment() {
         return listCreditorRightsTransferFragment;
     }
 
+    /**
+     * 列表债权人权利转让
+     */
     public void setListCreditorRightsTransferFragment(
-            ListCreditorRightsTransferFragment listCreditorRightsTransferFragment)
-    {
+            ListCreditorRightsTransferFragment listCreditorRightsTransferFragment) {
         this.listCreditorRightsTransferFragment = listCreditorRightsTransferFragment;
     }
 
-    public CreditorRightsDetailsActivity getCreditorRightsDetailsActivity()
-    {
+    /**
+     * 债权人权利详情
+     */
+    public CreditorRightsDetailsActivity getCreditorRightsDetailsActivity() {
         return creditorRightsDetailsActivity;
     }
 
+    /**
+     * 债权人权利详情
+     */
     public void setCreditorRightsDetailsActivity(
-            CreditorRightsDetailsActivity creditorRightsDetailsActivity)
-    {
+            CreditorRightsDetailsActivity creditorRightsDetailsActivity) {
         this.creditorRightsDetailsActivity = creditorRightsDetailsActivity;
     }
 
-    public TheTenderActivity getTenderActivity()
-    {
+    /**
+     * 招标activity
+     */
+    public TheTenderActivity getTenderActivity() {
         return tenderActivity;
     }
 
-    public void setTenderActivity(TheTenderActivity tenderActivity)
-    {
+    /**
+     * 招标activity
+     */
+    public void setTenderActivity(TheTenderActivity tenderActivity) {
         this.tenderActivity = tenderActivity;
     }
 
-    public InvestmentDetailsActivity getInvestmentDetailsActivity()
-    {
+    /**
+     * 投资详情activity
+     */
+    public InvestmentDetailsActivity getInvestmentDetailsActivity() {
         return investmentDetailsActivity;
     }
-
+    /**
+     * 投资详情activity
+     */
     public void setInvestmentDetailsActivity(
-            InvestmentDetailsActivity investmentDetailsActivity)
-    {
+            InvestmentDetailsActivity investmentDetailsActivity) {
         this.investmentDetailsActivity = investmentDetailsActivity;
     }
-
-    public HomeFragment getFirstFragment()
-    {
+    /**主页fragment*/
+    public HomeFragment getFirstFragment() {
         return FirstFragment;
     }
-
-    public void setFirstFragment(HomeFragment firstFragment)
-    {
+    /**主页fragment*/
+    public void setFirstFragment(HomeFragment firstFragment) {
         FirstFragment = firstFragment;
     }
-
-    public InvestmentFragment getSecondFragment()
-    {
+    /**我要投资fragment*/
+    public InvestmentFragment getSecondFragment() {
         return SecondFragment;
     }
-
-    public void setSecondFragment(InvestmentFragment mInvestmentFragment)
-    {
+    /**我呀投资fragment*/
+    public void setSecondFragment(InvestmentFragment mInvestmentFragment) {
         SecondFragment = mInvestmentFragment;
     }
-
-    public PersonalCenterFragment getThirdFragment()
-    {
+    /**个人中心fragment*/
+    public PersonalCenterFragment getThirdFragment() {
         return ThirdFragment;
     }
-
-    public void setThirdFragment(PersonalCenterFragment thirdFragment)
-    {
+    /**个人中心fragment*/
+    public void setThirdFragment(PersonalCenterFragment thirdFragment) {
         ThirdFragment = thirdFragment;
     }
-
-    public MoreFragment getFourthFragment()
-    {
+    /**更多fragment*/
+    public MoreFragment getFourthFragment() {
         return FourthFragment;
     }
 
-    public void setFourthFragment(MoreFragment fourthFragment)
-    {
+    /**更多fragment*/
+    public void setFourthFragment(MoreFragment fourthFragment) {
         FourthFragment = fourthFragment;
     }
 
-    public BeforeLoginActivity getBeforeLoginActivity()
-    {
+    /**登陆前activity*/
+    public BeforeLoginActivity getBeforeLoginActivity() {
         return beforeLoginActivity;
     }
-    /**设置未登录时的activity
+
+    /**
+     * 设置未登录时的activity
      * 作用:后面使用时如果未销毁可直接从application中获取???
-     * */
-    public void setBeforeLoginActivity(BeforeLoginActivity beforeLoginActivity)
-    {
+     */
+    public void setBeforeLoginActivity(BeforeLoginActivity beforeLoginActivity) {
         this.beforeLoginActivity = beforeLoginActivity;
     }
-
+    /**银行卡管理activity*/
     public BankCardManagerActivity getBankCardManagerActivity() {
         return bankCardManagerActivity;
     }
 
+    /**银行卡管理activity*/
     public void setBankCardManagerActivity(BankCardManagerActivity bankCardManagerActivity) {
         this.bankCardManagerActivity = bankCardManagerActivity;
     }
-
-    public LoginActivity getLoginActivity()
-    {
+    /**登陆activity*/
+    public LoginActivity getLoginActivity() {
         return loginActivity;
     }
 
-    public void setLoginActivity(LoginActivity loginActivity)
-    {
+    /**登陆activity*/
+    public void setLoginActivity(LoginActivity loginActivity) {
         this.loginActivity = loginActivity;
     }
-
-    public RetrievePasswordActivity getRetrievePasswordActivity()
-    {
+    /**获取密码activity*/
+    public RetrievePasswordActivity getRetrievePasswordActivity() {
         return retrievePasswordActivity;
     }
-
-    public RegisteredActivity getRegisteredActivity()
-    {
+    /**注册activity*/
+    public RegisteredActivity getRegisteredActivity() {
         return registeredActivity;
     }
 
-    public void setRegisteredActivity(RegisteredActivity registeredActivity)
-    {
+    /**注册activity*/
+    public void setRegisteredActivity(RegisteredActivity registeredActivity) {
         this.registeredActivity = registeredActivity;
     }
 
+    /**获取密码activity*/
     public void setRetrievePasswordActivity(
-            RetrievePasswordActivity retrievePasswordActivity)
-    {
+            RetrievePasswordActivity retrievePasswordActivity) {
         this.retrievePasswordActivity = retrievePasswordActivity;
     }
 
-    public static void initImageLoader(Context context)
-    {
+    /**初始化图片加载器*/
+    public static void initImageLoader(Context context) {
         // This configuration tuning is custom. You can tune every option, you
         // may tune some of them,
         // or you can create default configuration by
@@ -269,11 +312,11 @@ public class MyApplication extends Application
         // method.
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
                 context).threadPriority(Thread.NORM_PRIORITY - 2)
-                        .denyCacheImageMultipleSizesInMemory()
-                        .discCacheFileNameGenerator(new Md5FileNameGenerator())
-                        .tasksProcessingOrder(QueueProcessingType.LIFO)
-                        .writeDebugLogs() // Remove for release app
-                        .build();
+                .denyCacheImageMultipleSizesInMemory()
+                .discCacheFileNameGenerator(new Md5FileNameGenerator())
+                .tasksProcessingOrder(QueueProcessingType.LIFO)
+                .writeDebugLogs() // Remove for release app
+                .build();
         // Initialize ImageLoader with configuration.
         ImageLoader.getInstance().init(config);
     }
@@ -281,18 +324,18 @@ public class MyApplication extends Application
     /**
      * @获取默认的pendingIntent,为了防止2.3及以下版本报错
      * @flags属性: 在顶部常驻:Notification.FLAG_ONGOING_EVENT 点击去除：
-     *           Notification.FLAG_AUTO_CANCEL
+     * Notification.FLAG_AUTO_CANCEL
      */
-    public PendingIntent getDefalutIntent(int flags)
-    {
+    public PendingIntent getDefalutIntent(int flags) {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 1,
                 new Intent(), flags);
         return pendingIntent;
     }
 
-    /** 初始化通知栏 */
-    private void initNotify()
-    {
+    /**
+     * 初始化通知栏
+     */
+    private void initNotify() {
         mBuilder = new NotificationCompat.Builder(this);
         mBuilder.setContentTitle("").setContentText("")
                 .setContentIntent(
@@ -310,9 +353,10 @@ public class MyApplication extends Application
                 .setSmallIcon(R.drawable.v5_logo);
     }
 
-    /** 显示通知栏点击跳转到指定Activity */
-    public void showIntentActivityNotify(MyPushMessage msg, int notifyId)
-    {
+    /**
+     * 显示通知栏点击跳转到指定Activity
+     */
+    public void showIntentActivityNotify(MyPushMessage msg, int notifyId) {
         mBuilder.setAutoCancel(true)
                 // 点击后让通知将消失
                 .setContentTitle(msg.getTitle()).setContentText(msg.getBody())
@@ -332,18 +376,15 @@ public class MyApplication extends Application
         mNotificationManager.notify(notifyId, mBuilder.build());
     }
 
-    public int getTime()
-    {
+    public int getTime() {
         return time;
     }
 
-    public void setTime(int time)
-    {
+    public void setTime(int time) {
         this.time = time;
     }
-
-    public CountDownTimer getTimer()
-    {
+    /**定时器*/
+    public CountDownTimer getTimer() {
         return timer;
     }
 

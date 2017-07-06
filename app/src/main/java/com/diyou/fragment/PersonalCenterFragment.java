@@ -174,7 +174,7 @@ public class PersonalCenterFragment extends BaseFragment
         }
         super.setUserVisibleHint(isVisibleToUser);
     }
-
+    /**使用login_token,获取用户信息*/
     private void requestData()
     {
         TreeMap<String, String> map = new TreeMap<String, String>();
@@ -321,7 +321,7 @@ public class PersonalCenterFragment extends BaseFragment
         // mIvSetting.setVisibility(View.GONE);
         mViewMsg.setVisibility(View.GONE);
     }
-
+    /**为登陆状态时,布局调整和获取用户信息*/
     public void loginIn()
     {
         mNoLoginlayout.setVisibility(View.GONE);

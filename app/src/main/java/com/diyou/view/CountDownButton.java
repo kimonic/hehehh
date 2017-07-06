@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.CountDownTimer;
 import android.widget.Button;
+/**倒计时按钮*/
 
 public class CountDownButton extends CountDownTimer
 {

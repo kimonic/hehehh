@@ -130,10 +130,10 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
                 mPassword.setSelection(mPassword.getText().toString().length());
                 isChecked = !isChecked;
                 break;
-            case R.id.updatamobilephone_code_btn:
+            case R.id.updatamobilephone_code_btn://发送验证码
                 volleyGetVerificationCode();
                 break;
-            case R.id.registeredactivity_btn_next:
+            case R.id.registeredactivity_btn_next://注册
                 if (StringUtils.isEmpty(mVerifyCode)) {
                     ToastUtil.show(R.string.remind_send_auth_code_first);
                 } else if (StringUtils.isEmpty(mVerificationCode.getText().toString())) {
@@ -144,7 +144,7 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
                     volleyRegistered();
                 }
                 break;
-            case R.id.tv_register_net_agreement:
+            case R.id.tv_register_net_agreement://网站服务协议
                 Intent intent = new Intent(this, AdvertisingActivity.class);
                 intent.putExtra("action", "websiteAgreement");
                 intent.putExtra("url", UrlConstants.AGREEMENT_WEBSITE);
@@ -157,12 +157,12 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
 
     private void volleyRegistered() {
         TreeMap<String, String> map = new TreeMap<String, String>();
-        map.put("phone", mUserName);
-        map.put("phone_code", mVerificationCode.getText().toString());
-        map.put("password", mPassword.getText().toString());
-        map.put("type", "REG");
-        map.put("referrer", referrer.getText().toString());
-        HttpUtil.post(UrlConstants.REG, map, new JsonHttpResponseHandler() {
+        map.put("phone", mUserName);//用户名
+        map.put("phone_code", mVerificationCode.getText().toString());//验证码
+        map.put("password", mPassword.getText().toString());//密码
+        map.put("type", "REG");//类型
+        map.put("referrer", referrer.getText().toString());//推荐人
+        HttpUtil.post(UrlConstants.REG, map, new JsonHttpResponseHandler() {//post提交
             @Override
             public void onFinish() {
                 if (progressDialogBar.isShowing()) {
@@ -191,15 +191,16 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
             @Override
             public void onSuccess(int statusCode, Header[] headers,
                                   JSONObject response) {
+                //提交成功,解析返回的json数据
                 try {
                     if (CreateCode.AuthentInfo(response)) {
                         JSONObject json = StringUtils.parseContent(response);
                         if ("success".equals(json.optString("result"))) {
                             ToastUtil.show("注册成功");
                             // setResult(Constants.REGISTERSUCCESS);
-                            volleyLogin();
+                            volleyLogin();//登陆
                         } else {
-                            ToastUtil.show(json.optString("description"));
+                            ToastUtil.show(json.optString("description"));//失败描述
                         }
                     }
                 } catch (JSONException e) {
@@ -209,7 +210,7 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
             }
         });
     }
-
+    /**用户登陆*/
     private void volleyLogin() {
         TreeMap<String, String> map = new TreeMap<String, String>();
         map.put("member_name", mUserName);
@@ -246,14 +247,14 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
                             JSONObject data = json.getJSONObject("data");
                             UserConfig.getInstance().setLoginToken(
                                     data.optString("login_token"));
-                            MyApplication.isLogin = true;
+                            MyApplication.isLogin = true;//登陆状态,应用退出后即为未登陆状态
                             // 设置home页面登录按钮小时处理
                             // MyApplication.app.getFirstFragment()
                             // .setLogindimss();
                             MyApplication.app.getThirdFragment().loginIn();
                             MyApplication.getInstance().getBeforeLoginActivity()
-                                    .finish();
-                            //  存Token
+                                    .finish();//结束未登陆activity
+                            //  存Token,登陆令牌
                             SharedPreUtils.putString(Constants.SHARE_LOGINTOKEN,
                                     AESencrypt.encrypt2PHP(
                                             CreateCode.getSEND_AES_KEY(),
@@ -284,14 +285,14 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
         });
 
     }
-
+    /**获取验证码*/
     private void volleyGetVerificationCode() {
         TreeMap<String, String> map = new TreeMap<String, String>();
         map.put("login_token", "");
         map.put("phone", mUserName);
         map.put("type", "reg");
         map.put("is_check", "1");// 验证手机是否存在/或者已被注册
-        final String random = StringUtils.getRandom().toString();
+        final String random = StringUtils.getRandom().toString();//随机数
         mVerifyCode = random;
         map.put("phone_code", random);
         HttpUtil.post(UrlConstants.REG_SMS, map, new JsonHttpResponseHandler() {
@@ -328,14 +329,14 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
                         JSONObject json = StringUtils.parseContent(response);
                         if ("success".equals(json.optString("result"))) {
 //                            mVerifyCode=random;
-                            CountDownButton downButton = new CountDownButton();
+                            CountDownButton downButton = new CountDownButton();//倒计时按钮
                             downButton.init(RegisteredActivity.this,
                                     mVerificationCode_btn);
                             downButton.start();
                             ToastUtil.show("发送成功");
                             prompt.setVisibility(View.VISIBLE);
                         } else {
-                            ToastUtil.show(json.optString("description"));
+                            ToastUtil.show(json.optString("description"));//异常描述
                         }
                     }
                 } catch (JSONException e) {
@@ -345,7 +346,7 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener 
             }
         });
     }
-
+    /**text输入监听*/
     class MyTextWatcher implements TextWatcher {
         private RadioButton imageView;
 
