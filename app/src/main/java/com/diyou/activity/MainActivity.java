@@ -125,7 +125,7 @@ public class MainActivity extends BaseMainActivity
     }
 
     /**
-     * 
+     * 初始化fragment
      */
     private void initDatas()
     {
@@ -133,24 +133,29 @@ public class MainActivity extends BaseMainActivity
         mInvestmentFragment = new InvestmentFragment();
         personalCenterFragment = new PersonalCenterFragment();
         mMoreFragmenmt = new MoreFragment();
+
+        //设置到application?????
         mPpplication.setFirstFragment(mHomeFragment);
         mPpplication.setSecondFragment(mInvestmentFragment);
         mPpplication.setThirdFragment(personalCenterFragment);
         mPpplication.setFourthFragment(mMoreFragmenmt);
+
+
         mTabs.add(mHomeFragment);
         mTabs.add(mInvestmentFragment);
         // mTabs.add(mMoreFragmenmt);
         mTabs.add(personalCenterFragment);
 
     }
-
+    /**初始化viewpager*/
     private void initViewPager()
     {
         initDatas();
         // dealRegisterSuccess();
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
+        //设置ViewPager切换时的动画效果
         mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
-        mViewPager.setOffscreenPageLimit(3);
+        mViewPager.setOffscreenPageLimit(3);//不显示时不销毁
         // mViewPager.setCurrentItem(0, false);
         initEvent();
         mAdapter = new FragmentPagerAdapter(getSupportFragmentManager())

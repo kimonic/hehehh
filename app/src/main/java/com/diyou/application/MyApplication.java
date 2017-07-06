@@ -213,7 +213,9 @@ public class MyApplication extends Application
     {
         return beforeLoginActivity;
     }
-
+    /**设置未登录时的activity
+     * 作用:后面使用时如果未销毁可直接从application中获取???
+     * */
     public void setBeforeLoginActivity(BeforeLoginActivity beforeLoginActivity)
     {
         this.beforeLoginActivity = beforeLoginActivity;

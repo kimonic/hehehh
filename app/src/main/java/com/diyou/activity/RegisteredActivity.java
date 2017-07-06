@@ -38,28 +38,42 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 /**
- * @author 注册
- * 
+ * @author 注册用户activity
  */
-public class RegisteredActivity extends BaseActivity implements OnClickListener
-{
-
+public class RegisteredActivity extends BaseActivity implements OnClickListener {
+    /**
+     * 输入验证码
+     */
     private EditText mVerificationCode;
+    /**
+     * 输入密码
+     */
     private EditText mPassword;
+    /**
+     * 推荐人输入
+     */
     private EditText referrer;
+    /**
+     * 注册账号输入
+     */
     private TextView phone1;
     private TextView phone2;
     private String mUserName;
+    /**
+     * 发送验证码
+     */
     private Button mVerificationCode_btn;
     protected Dialog progressDialogBar;
     private View prompt;
     private Boolean isChecked = false;
+    /**
+     * 密文或明文显示
+     */
     private ImageView password_visual;
     private String mVerifyCode;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         MyApplication.getInstance().setRegisteredActivity(this);
         setContentView(R.layout.activity_registered);
@@ -68,8 +82,7 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
         initView();
     }
 
-    private void initView()
-    {
+    private void initView() {
         phone1 = (TextView) findViewById(R.id.registeredactivity_telephone1);
         phone1.setText(mUserName.subSequence(0, 3) + "****"
                 + mUserName.subSequence(7, 11));
@@ -95,84 +108,72 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
     }
 
     @Override
-    public void onClick(View v)
-    {
-        switch (v.getId())
-        {
-        case R.id.registeredactivity_back:
-            finish();
-            break;
-        case R.id.loginactivity_cls:
-            referrer.setText(null);
-            break;
-        case R.id.password_visual:
-            if (!isChecked)
-            {
-                password_visual.setImageResource(
-                        R.drawable.icon_password_visual_cancel);
-                mPassword.setTransformationMethod(
-                        PasswordTransformationMethod.getInstance());
-            }
-            else
-            {
-                password_visual
-                        .setImageResource(R.drawable.icon_password_visual_ok);
-                mPassword.setTransformationMethod(null);
-            }
-            mPassword.setSelection(mPassword.getText().toString().length());
-            isChecked = !isChecked;
-            break;
-        case R.id.updatamobilephone_code_btn:
-            volleyGetVerificationCode();
-            break;
-        case R.id.registeredactivity_btn_next:
-            if(StringUtils.isEmpty(mVerifyCode)){
-                ToastUtil.show(R.string.remind_send_auth_code_first);
-            }else if (StringUtils.isEmpty(mVerificationCode.getText().toString()))
-            {
-                ToastUtil.show(R.string.remind_input_auth_code);
-            }else if(!mVerifyCode.equals(StringUtils.getString(mVerificationCode))){
-                ToastUtil.show(R.string.remind_input_correct_auth_code);
-            }else if(StringUtils.checkLoginPassword(mPassword.getText().toString())){
-                volleyRegistered();
-            }
-            break;
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.registeredactivity_back://退出
+                finish();
+                break;
+            case R.id.loginactivity_cls://删除推荐人内容
+                referrer.setText(null);
+                break;
+            case R.id.password_visual://明文或密文显示
+                if (!isChecked) {
+                    password_visual.setImageResource(
+                            R.drawable.icon_password_visual_cancel);
+                    mPassword.setTransformationMethod(
+                            PasswordTransformationMethod.getInstance());
+                } else {
+                    password_visual
+                            .setImageResource(R.drawable.icon_password_visual_ok);
+                    mPassword.setTransformationMethod(null);
+                }
+                mPassword.setSelection(mPassword.getText().toString().length());
+                isChecked = !isChecked;
+                break;
+            case R.id.updatamobilephone_code_btn:
+                volleyGetVerificationCode();
+                break;
+            case R.id.registeredactivity_btn_next:
+                if (StringUtils.isEmpty(mVerifyCode)) {
+                    ToastUtil.show(R.string.remind_send_auth_code_first);
+                } else if (StringUtils.isEmpty(mVerificationCode.getText().toString())) {
+                    ToastUtil.show(R.string.remind_input_auth_code);
+                } else if (!mVerifyCode.equals(StringUtils.getString(mVerificationCode))) {
+                    ToastUtil.show(R.string.remind_input_correct_auth_code);
+                } else if (StringUtils.checkLoginPassword(mPassword.getText().toString())) {
+                    volleyRegistered();
+                }
+                break;
             case R.id.tv_register_net_agreement:
                 Intent intent = new Intent(this, AdvertisingActivity.class);
                 intent.putExtra("action", "websiteAgreement");
-                intent.putExtra("url",UrlConstants.AGREEMENT_WEBSITE);
+                intent.putExtra("url", UrlConstants.AGREEMENT_WEBSITE);
                 startActivity(intent);
                 break;
-        default:
-            break;
+            default:
+                break;
         }
     }
 
-    private void volleyRegistered()
-    {
+    private void volleyRegistered() {
         TreeMap<String, String> map = new TreeMap<String, String>();
         map.put("phone", mUserName);
         map.put("phone_code", mVerificationCode.getText().toString());
         map.put("password", mPassword.getText().toString());
         map.put("type", "REG");
         map.put("referrer", referrer.getText().toString());
-        HttpUtil.post(UrlConstants.REG, map, new JsonHttpResponseHandler()
-        {
+        HttpUtil.post(UrlConstants.REG, map, new JsonHttpResponseHandler() {
             @Override
-            public void onFinish()
-            {
-                if (progressDialogBar.isShowing())
-                {
+            public void onFinish() {
+                if (progressDialogBar.isShowing()) {
                     progressDialogBar.dismiss();
                 }
                 super.onFinish();
             }
 
             @Override
-            public void onStart()
-            {
-                if (progressDialogBar == null)
-                {
+            public void onStart() {
+                if (progressDialogBar == null) {
                     progressDialogBar = ProgressDialogBar
                             .createDialog(RegisteredActivity.this);
                 }
@@ -182,35 +183,26 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
 
             @Override
             public void onFailure(int statusCode, Header[] headers,
-                    Throwable throwable, JSONObject errorResponse)
-            {
+                                  Throwable throwable, JSONObject errorResponse) {
                 ToastUtil.show("网络请求失败,请稍后在试！");
                 super.onFailure(statusCode, headers, throwable, errorResponse);
             }
 
             @Override
             public void onSuccess(int statusCode, Header[] headers,
-                    JSONObject response)
-            {
-                try
-                {
-                    if (CreateCode.AuthentInfo(response))
-                    {
+                                  JSONObject response) {
+                try {
+                    if (CreateCode.AuthentInfo(response)) {
                         JSONObject json = StringUtils.parseContent(response);
-                        if ("success".equals(json.optString("result")))
-                        {
+                        if ("success".equals(json.optString("result"))) {
                             ToastUtil.show("注册成功");
                             // setResult(Constants.REGISTERSUCCESS);
                             volleyLogin();
-                        }
-                        else
-                        {
+                        } else {
                             ToastUtil.show(json.optString("description"));
                         }
                     }
-                }
-                catch (JSONException e)
-                {
+                } catch (JSONException e) {
                     e.printStackTrace();
                 }
                 super.onSuccess(statusCode, headers, response);
@@ -218,29 +210,23 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
         });
     }
 
-    private void volleyLogin()
-    {
+    private void volleyLogin() {
         TreeMap<String, String> map = new TreeMap<String, String>();
         map.put("member_name", mUserName);
         map.put("password", mPassword.getText().toString());
         map.put("type", 2 + "");
-        HttpUtil.post(UrlConstants.LOGIN, map, new JsonHttpResponseHandler()
-        {
+        HttpUtil.post(UrlConstants.LOGIN, map, new JsonHttpResponseHandler() {
             @Override
-            public void onFinish()
-            {
-                if (progressDialogBar.isShowing())
-                {
+            public void onFinish() {
+                if (progressDialogBar.isShowing()) {
                     progressDialogBar.dismiss();
                 }
                 super.onFinish();
             }
 
             @Override
-            public void onStart()
-            {
-                if (progressDialogBar == null)
-                {
+            public void onStart() {
+                if (progressDialogBar == null) {
                     progressDialogBar = ProgressDialogBar
                             .createDialog(RegisteredActivity.this);
                 }
@@ -250,16 +236,12 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
 
             @Override
             public void onSuccess(int statusCode, Header[] headers,
-                    JSONObject response)
-            {
-                try
-                {
-                    if (CreateCode.AuthentInfo(response))
-                    {
+                                  JSONObject response) {
+                try {
+                    if (CreateCode.AuthentInfo(response)) {
                         JSONObject json = StringUtils.parseContent(response);
                         // JSON还没调试，有点小问题
-                        if (json.optString("result").contains("success"))
-                        {
+                        if (json.optString("result").contains("success")) {
 
                             JSONObject data = json.getJSONObject("data");
                             UserConfig.getInstance().setLoginToken(
@@ -283,15 +265,11 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
                                     RegisteredActivity.this, "登录成功！",
                                     "马上设置手势密码?", Constants.LOGINSUCCESS, "");
                             dialog.show();
-                        }
-                        else
-                        {
+                        } else {
                             ToastUtil.show(json.optString("description"));
                         }
                     }
-                }
-                catch (JSONException e)
-                {
+                } catch (JSONException e) {
                     e.printStackTrace();
                 }
                 super.onSuccess(statusCode, headers, response);
@@ -299,8 +277,7 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
 
             @Override
             public void onFailure(int statusCode, Header[] headers,
-                    Throwable throwable, JSONObject errorResponse)
-            {
+                                  Throwable throwable, JSONObject errorResponse) {
                 ToastUtil.show("网络请求失败,请稍后在试！");
             }
 
@@ -308,33 +285,27 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
 
     }
 
-    private void volleyGetVerificationCode()
-    {
+    private void volleyGetVerificationCode() {
         TreeMap<String, String> map = new TreeMap<String, String>();
         map.put("login_token", "");
         map.put("phone", mUserName);
         map.put("type", "reg");
         map.put("is_check", "1");// 验证手机是否存在/或者已被注册
         final String random = StringUtils.getRandom().toString();
-        mVerifyCode=random;
+        mVerifyCode = random;
         map.put("phone_code", random);
-        HttpUtil.post(UrlConstants.REG_SMS, map, new JsonHttpResponseHandler()
-        {
+        HttpUtil.post(UrlConstants.REG_SMS, map, new JsonHttpResponseHandler() {
             @Override
-            public void onFinish()
-            {
-                if (progressDialogBar.isShowing())
-                {
+            public void onFinish() {
+                if (progressDialogBar.isShowing()) {
                     progressDialogBar.dismiss();
                 }
                 super.onFinish();
             }
 
             @Override
-            public void onStart()
-            {
-                if (progressDialogBar == null)
-                {
+            public void onStart() {
+                if (progressDialogBar == null) {
                     progressDialogBar = ProgressDialogBar
                             .createDialog(RegisteredActivity.this);
                 }
@@ -344,23 +315,18 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
 
             @Override
             public void onFailure(int statusCode, Header[] headers,
-                    Throwable throwable, JSONObject errorResponse)
-            {
+                                  Throwable throwable, JSONObject errorResponse) {
                 ToastUtil.show(R.string.generic_error);
                 super.onFailure(statusCode, headers, throwable, errorResponse);
             }
 
             @Override
             public void onSuccess(int statusCode, Header[] headers,
-                    JSONObject response)
-            {
-                try
-                {
-                    if (CreateCode.AuthentInfo(response))
-                    {
+                                  JSONObject response) {
+                try {
+                    if (CreateCode.AuthentInfo(response)) {
                         JSONObject json = StringUtils.parseContent(response);
-                        if ("success".equals(json.optString("result")))
-                        {
+                        if ("success".equals(json.optString("result"))) {
 //                            mVerifyCode=random;
                             CountDownButton downButton = new CountDownButton();
                             downButton.init(RegisteredActivity.this,
@@ -368,15 +334,11 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
                             downButton.start();
                             ToastUtil.show("发送成功");
                             prompt.setVisibility(View.VISIBLE);
-                        }
-                        else
-                        {
+                        } else {
                             ToastUtil.show(json.optString("description"));
                         }
                     }
-                }
-                catch (JSONException e)
-                {
+                } catch (JSONException e) {
                     e.printStackTrace();
                 }
                 super.onSuccess(statusCode, headers, response);
@@ -384,33 +346,28 @@ public class RegisteredActivity extends BaseActivity implements OnClickListener
         });
     }
 
-    class MyTextWatcher implements TextWatcher
-    {
+    class MyTextWatcher implements TextWatcher {
         private RadioButton imageView;
 
-        public MyTextWatcher(RadioButton imageView)
-        {
+        public MyTextWatcher(RadioButton imageView) {
             this.imageView = imageView;
         }
 
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count,
-                int after)
-        {
+                                      int after) {
 
         }
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before,
-                int count)
-        {
+                                  int count) {
             imageView.setChecked(s.length() > 0 ? true : false);
 
         }
 
         @Override
-        public void afterTextChanged(Editable s)
-        {
+        public void afterTextChanged(Editable s) {
 
         }
 

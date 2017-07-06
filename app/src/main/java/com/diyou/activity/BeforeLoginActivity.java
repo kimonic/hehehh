@@ -26,10 +26,13 @@ import org.json.JSONObject;
 
 import java.util.TreeMap;
 
+/**未登陆时弹出的activity*/
 public class BeforeLoginActivity extends BaseActivity implements OnClickListener
 {
+    /**输入手机号或用户名*/
     private EditText mUesrname;
     protected ProgressDialogBar progressDialogBar;
+    /**下一步按钮*/
     private Button mSubmit;
 
     @Override
@@ -48,6 +51,7 @@ public class BeforeLoginActivity extends BaseActivity implements OnClickListener
         mSubmit.setOnClickListener(this);
         findViewById(R.id.loginactivity_cls).setOnClickListener(this);
         mUesrname = (EditText) findViewById(R.id.beforeloginactivity_uesrname);
+        //监听输入变化
         mUesrname.addTextChangedListener(new TextWatcher()
         {
             
@@ -80,27 +84,27 @@ public class BeforeLoginActivity extends BaseActivity implements OnClickListener
     {
         switch (v.getId())
         {
-        case R.id.loginactivity_back:
+        case R.id.loginactivity_back://返回
             finish();
             break;
-        case R.id.loginactivity_cls:
+        case R.id.loginactivity_cls://清空输入
             mUesrname.setText(null);
             break;
-        case R.id.beforeloginactivity_btn_next:
+        case R.id.beforeloginactivity_btn_next://下一步
             if (StringUtils.isEmpty2(mUesrname.getText().toString()))
             {
                 ToastUtil.show("请输入手机号、邮箱或用户名");
             }
             else
             {
-                volleyLogin();
+                volleyLogin();//登陆
             }
             break;
         default:
             break;
         }
     }
-
+    /**用户登陆*/
     private void volleyLogin()
     {
         TreeMap<String, String> map = new TreeMap<String, String>();
