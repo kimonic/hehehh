@@ -3,4 +3,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/radio_icon3_check"></item>
     <item android:state_checked="true" android:drawable="@drawable/radio_icon3_check"></item>
 <item android:drawable="@drawable/radio_icon3"></item>
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/radio_check3.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/radio_check3.xml -->

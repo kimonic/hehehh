@@ -6,4 +6,4 @@
     <item android:drawable="@drawable/check_right_btn" android:state_focused="true"/>
     <item android:drawable="@drawable/right_btn" android:state_focused="false"/>
 
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/right_btn_select.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/right_btn_select.xml -->

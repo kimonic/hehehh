@@ -3,4 +3,4 @@
 
 <item android:state_pressed="true" android:drawable="@color/lanse"></item>
 <item android:drawable="@color/dark_bule"></item>
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/selector_titlebar_blue.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/selector_titlebar_blue.xml -->

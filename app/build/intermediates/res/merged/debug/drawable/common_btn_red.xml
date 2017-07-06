@@ -5,4 +5,4 @@
     <item android:state_enabled="true" android:drawable="@drawable/skin_common_btn_red_unpressed" />
     <item android:state_enabled="false" android:drawable="@drawable/skin_common_btn_red_disabled" />
 </selector>
-<!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/common_btn_red.xml -->
+<!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/common_btn_red.xml -->

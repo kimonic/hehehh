@@ -62,4 +62,4 @@
         android:layout_marginRight="16dip"
         android:layout_gravity="center_vertical"
         android:src="@drawable/table_arrow" />
-</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/item_withdraw_record_lv_1.xml -->
+</LinearLayout><!-- From: file:/D:/work/app/hehehh/app/src/main/res/layout/item_withdraw_record_lv_1.xml -->

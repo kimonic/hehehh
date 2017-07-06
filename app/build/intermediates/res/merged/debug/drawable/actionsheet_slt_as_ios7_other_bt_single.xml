@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/actionsheet_single_pressed" android:state_pressed="true"/>
     <item android:drawable="@drawable/actionsheet_single_normal"/>
 
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_single.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_single.xml -->

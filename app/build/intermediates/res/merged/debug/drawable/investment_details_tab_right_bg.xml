@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/corners_right_bg" android:state_checked="true"></item>
     <item android:drawable="@drawable/corners_right_false_bg" android:state_checked="false"></item>
 
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/investment_details_tab_right_bg.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/investment_details_tab_right_bg.xml -->

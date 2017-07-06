@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/phone_selected" android:state_checked="true"></item>
     <item android:drawable="@drawable/phone"></item>
 
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/registered_phone.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/registered_phone.xml -->

@@ -51,4 +51,4 @@
         android:layout_alignTop="@+id/authentication_wv"
         android:progressDrawable="@drawable/web_barbgimg" />
 
-</RelativeLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_huifu_authentication.xml -->
+</RelativeLayout><!-- From: file:/D:/work/app/hehehh/app/src/main/res/layout/activity_huifu_authentication.xml -->

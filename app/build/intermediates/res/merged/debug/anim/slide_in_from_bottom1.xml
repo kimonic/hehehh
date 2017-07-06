@@ -19,4 +19,4 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="100%p"
     android:toYDelta="0" />
-<!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/anim/slide_in_from_bottom1.xml -->
+<!-- From: file:/D:/work/app/hehehh/app/src/main/res/anim/slide_in_from_bottom1.xml -->

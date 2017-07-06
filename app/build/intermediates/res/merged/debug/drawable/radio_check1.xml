@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/radio_icon1_check" android:state_checked="true"></item>
     <item android:drawable="@drawable/radio_icon1"></item>
 
-</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/radio_check1.xml -->
+</selector><!-- From: file:/D:/work/app/hehehh/app/src/main/res/drawable/radio_check1.xml -->

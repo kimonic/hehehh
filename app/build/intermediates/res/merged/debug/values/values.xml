@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="category_id" translatable="false">
         <item>信用标</item>
@@ -37,13 +37,13 @@
         <item>复审通过</item>
         <item>已还完</item>
     </string-array>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/attr.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/attr.xml -->
     <eat-comment/>
     <attr format="color" name="color"/>
     <attr format="reference" name="icon"/>
     <attr format="string" name="text"/>
     <attr format="dimension" name="text_size"/>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="activity_bg">#fff0eff4</color>
     <color name="all_background">#EFEFF4</color>
@@ -114,7 +114,7 @@
     <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
     <declare-styleable name="PullToRefresh1"><attr format="reference|color" name="ptrRefreshableViewBackground1"/><attr format="reference|color" name="ptrHeaderBackground1"/><attr format="reference|color" name="ptrHeaderTextColor1"/><attr format="reference|color" name="ptrHeaderSubTextColor1"/><attr name="ptrMode1"><flag name="disabled1" value="0x0"/><flag name="pullFromStart1" value="0x1"/><flag name="pullFromEnd1" value="0x2"/><flag name="both1" value="0x3"/><flag name="manualOnly1" value="0x4"/><flag name="pullDownFromTop1" value="0x1"/><flag name="pullUpFromBottom1" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator1"/><attr format="reference" name="ptrDrawable1"/><attr format="reference" name="ptrDrawableStart1"/><attr format="reference" name="ptrDrawableEnd1"/><attr format="reference|boolean" name="ptrOverScroll1"/><attr format="reference" name="ptrHeaderTextAppearance1"/><attr format="reference" name="ptrSubHeaderTextAppearance1"/><attr name="ptrAnimationStyle1"><flag name="rotate1" value="0x0"/><flag name="flip1" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled1"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled1"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling1"/><attr format="reference|color" name="ptrAdapterViewBackground1"/><attr format="reference" name="ptrDrawableTop1"/><attr format="reference" name="ptrDrawableBottom1"/></declare-styleable>
     <declare-styleable name="RoundProgressBar"><attr format="color" name="roundColor"/><attr format="color" name="roundProgressColor"/><attr format="dimension" name="roundWidth"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="integer" name="max"/><attr format="boolean" name="textIsDisplayable"/><attr name="style"><enum name="STROKE" value="0"/><enum name="FILL" value="1"/></attr></declare-styleable>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="account_detail_button_height">50dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -159,16 +159,16 @@
     <dimen name="row_sumtitle">15sp</dimen>
     <dimen name="row_title">18sp</dimen>
     <dimen name="textsize">18dp</dimen>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <drawable name="trans">@color/color_hei_8</drawable>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="gridview" type="id"/>
     <item name="scrollview" type="id"/>
     <item name="viewpager" type="id"/>
     <item name="webview" type="id"/>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Financial_description">预估收益计算仅供参考，以实际收益为准</string>
     <string name="PersonalCenter_title">个人中心</string>
@@ -279,11 +279,11 @@
     <string name="auditconclusionfragment_registered">注册</string>
     <string name="auditconclusionfragment_reviewTheStatus">审核状态</string>
     <string name="auditconclusionfragment_theRelevantData">相关资料</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="baidutieba">百度贴吧</string>
     <string name="baidutieba_client_inavailable">目前您的百度贴吧版本过低或未安装，需要安装百度贴吧才能使用</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="balance">余     额：</string>
     <string name="bank_financial_gain">银行理财收益</string>
@@ -315,10 +315,10 @@
     <string name="bind_phone_remind_msg3">请将验证码填入上方区域完成验证。</string>
     <string name="bind_phone_submit">确认绑定</string>
     <string name="bind_phone_title">手机绑定</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="bluetooth">蓝牙</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="borrowingdetailsfragment_age">年龄：</string>
     <string name="borrowingdetailsfragment_agreement">借款协议(范本)</string>
@@ -460,17 +460,17 @@
     <string name="dialog_title_set_paypassword">支付密码</string>
     <string name="dialog_title_set_realname">实名认证</string>
     <string name="dialog_title_version_updating">版本更新</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="douban">豆瓣</string>
     <string name="dropbox">Dropbox</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="earnings_include_rewards">收益包含奖励：</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="email">邮件</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="email_bind_hint">请输入您的邮箱</string>
     <string name="email_bind_input_right">请输入正确的邮箱账号</string>
@@ -490,27 +490,27 @@
     <string name="enter_userName">请输入用户名</string>
     <string name="escrowregistered_huifu_authentication">开通汇付天下</string>
     <string name="escrowregistered_huifu_back">上一步</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="evernote">印象笔记</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="expected_revenue">预期收益(元)：</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="facebook">Facebook</string>
     <string name="facebookmessenger">Facebook Messenger</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="fen">份</string>
     <string name="financial_calculator">理财计算器</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="finish">完成</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="flickr">Flickr</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="fmd_additional_apr">+%1$.2f%%</string>
     <string name="fmd_bid_additional_apr">%1$s元+%2$s元</string>
@@ -519,10 +519,10 @@
     <string name="forgot_password_email_title">邮箱找回密码</string>
     <string name="forgot_password_phone_title">手机找回密码</string>
     <string name="forgot_password_title">找回密码</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="foursquare">FourSquare</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="fund_detail_can_balance">可用余额</string>
     <string name="fund_detail_collection_capital">待收本金</string>
@@ -535,11 +535,11 @@
     <string name="generic_server_down">连接服务器失败~！</string>
     <string name="gesture_password_guide_creat_btn">创建手势密码</string>
     <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
     <string name="googleplus">Google+</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="goon">继续</string>
     <string name="hascastprojectactivity_item_has_profit">已收益（元）</string>
@@ -566,12 +566,12 @@
     <string name="income_includes_interest">收益包含利息：</string>
     <string name="inside_letter_detail_title">站内信详情</string>
     <string name="inside_letter_title">站内信列表</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="instagram">Instagram</string>
     <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
     <string name="instapager_email_or_password_incorrect">Email或密码不正确</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/instapaper_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/instapaper_strings.xml -->
     <eat-comment/>
     <string formatted="false" name="instapager_login_html"><![CDATA[
 <!DOCTYPE html>
@@ -639,14 +639,14 @@ function login(form){
 </body>
 </html>
 ]]></string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="instapaper">Instapaper</string>
     <string name="instapaper_email">邮箱</string>
     <string name="instapaper_login">登录</string>
     <string name="instapaper_logining">登录中…</string>
     <string name="instapaper_pwd">密码</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="invest_detail_apr">年利率:</string>
     <string name="invest_detail_aword_money">奖励金额:</string>
@@ -701,7 +701,7 @@ function login(form){
     <string name="investmentrecordfragment_investmentAmount">投资金额</string>
     <string name="investmentrecordfragment_theBidder">投标人</string>
     <string name="investmentrecordfragment_tradingHours">交易时间</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="kaixin">开心网</string>
     <string name="kakaostory">KakaoStory</string>
@@ -711,18 +711,18 @@ function login(form){
     <string name="laiwang">来往</string>
     <string name="laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
     <string name="laiwangmoments">来往动态</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="limit_number">限投份数：</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="line">Line</string>
     <string name="line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
     <string name="linkedin">领英</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="list_friends">%s的朋友</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="listcreditorrightstransfer_and">/</string>
     <string name="listcreditorrightstransfer_borrowingRates">原标年化收率</string>
@@ -765,11 +765,11 @@ function login(form){
     <string name="mainactivity_tab_home">首页</string>
     <string name="mainactivity_tab_investment">我要投资</string>
     <string name="mainactivity_tab_loan">我的借款</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="mingdao">明道</string>
     <string name="mingdao_share_content">网页分享</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="minimum_transfer_unit">最小流转：</string>
     <string name="mnull"/>
@@ -790,10 +790,10 @@ function login(form){
     <string name="morefragment_update_inspection">更新检查</string>
     <string name="morefragment_working_time1">电话时间：周一至周六 9：00–18：00</string>
     <string name="morefragment_working_time2">在线客服：周一至周六 9：00–21：00</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="multi_share">图文分享</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="my_creditor">我的债权</string>
     <string name="my_investment">我的投资</string>
@@ -840,10 +840,10 @@ function login(form){
     <string name="myborrowingItem_tv_return_overdue">逾期天数</string>
     <string name="myborrowingItem_tv_return_principal">实还本金</string>
     <string name="myborrowingactivity_Iborrow">我的借款</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="neteasemicroblog">网易微博</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="network_request_failed">网络请求失败,请稍后在试！</string>
     <string name="no_internet">无网络连接~！</string>
@@ -899,17 +899,17 @@ function login(form){
     <string name="phoneregisteredactivity_use_terms">《工艺通使用条款》</string>
     <string name="phoneregisteredactivity_user_name">用戶名</string>
     <string name="phoneregisteredactivity_verification_code">验证码</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="pinterest">Pinterest</string>
     <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="please_login">请登录！</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="pocket">Pocket</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="product_expected">产品预计收益</string>
     <string name="progress_wait">请等待...</string>
@@ -924,10 +924,10 @@ function login(form){
     <string name="promotion_record_type">提成方式:</string>
     <string name="promotion_record_user_name">用 户 名 :</string>
     <string name="prosecution_amount">起投金额：</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="pull_to_refresh">下拉刷新</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
     <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
@@ -935,12 +935,12 @@ function login(form){
     <string name="pull_to_refresh_pull_label">下拉刷新…</string>
     <string name="pull_to_refresh_refreshing_label">正在载入…</string>
     <string name="pull_to_refresh_release_label">放开以刷新…</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="qq">QQ</string>
     <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
     <string name="qzone">QQ空间</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="real_name_id_name">姓名：</string>
     <string name="real_name_id_num">身份证号：</string>
@@ -967,10 +967,10 @@ function login(form){
     <string name="recharge_type">类型：</string>
     <string name="recharge_withdraw_fee">充值手续费</string>
     <string name="recharge_withdraw_money">充值金额</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="refreshing">刷新中…</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="refund_interest_yes">实收利息:</string>
     <string name="refund_principal">应收总额:</string>
@@ -989,10 +989,10 @@ function login(form){
     <string name="registeredactivity_regeist_sendsms_partB">发送短信，请输入短信验证码完成注册。</string>
     <string name="registeredactivity_user_name">请输入推荐人账号/手机号</string>
     <string name="related_items">关联项目:</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="release_to_refresh">松开刷新</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="reloading">点击重新加载</string>
     <string name="remind_account_no_money">账户余额不足</string>
@@ -1082,19 +1082,19 @@ function login(form){
     <string name="remind_wait_check">数据上传成功，等待审核</string>
     <string name="remind_withdraw_fail">提现失败</string>
     <string name="remind_withdraw_succeed">提现成功</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="renren">人人网</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="repayment_method">还款方式：</string>
     <string name="repayment_mode">还款方式</string>
     <string name="repayment_period">还款期限:</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="select_a_friend">请选择一个朋友</string>
     <string name="select_one_plat_at_least">请选择一个目标平台</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="set_paypwd_input_new">输入新的支付密码</string>
     <string name="set_paypwd_login_pwd">登录密码</string>
@@ -1116,7 +1116,7 @@ function login(form){
     <string name="settlement_record_money">结算金额(元)</string>
     <string name="settlement_record_status">状态</string>
     <string name="settlement_record_time">时间</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="shake2share">摇晃手机！</string>
     <string name="share">分享</string>
@@ -1124,31 +1124,31 @@ function login(form){
     <string name="share_completed">分享成功</string>
     <string name="share_failed">分享失败</string>
     <string name="share_to">分享到</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="share_to_baidutieba">分享到百度贴吧</string>
     <string name="share_to_mingdao">分享到明道</string>
     <string name="share_to_qq">分享到QQ</string>
     <string name="share_to_qzone">分享到QQ空间</string>
     <string name="share_to_qzone_default">来自%s的分享</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/oks_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/oks_strings.xml -->
     <eat-comment/>
     <string name="sharing">分享操作正在后台进行…</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="shortmessage">信息</string>
     <string name="sinaweibo">新浪微博</string>
     <string name="sohumicroblog">搜狐微博</string>
     <string name="sohusuishenkan">搜狐随身看</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="success_transfer_amount">成功转让金额</string>
     <string name="successful_import_amount">成功购买金额</string>
     <string name="sure">确定</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="tencentweibo">腾讯微博</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="thetenderactivity_amount_available">可用金额(元)</string>
     <string name="thetenderactivity_bid_amount">投标金额(元)</string>
@@ -1220,11 +1220,11 @@ function login(form){
     <string name="transfer_price_fee">转让手续费：</string>
     <string name="transfer_time">转让时间:</string>
     <string name="try_again">重试</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="tumblr">Tumblr</string>
     <string name="twitter">Twitter</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="txt_ordernumber">订单号：</string>
     <string name="txt_pay_by">付款方式：</string>
@@ -1234,10 +1234,10 @@ function login(form){
     <string name="update_paypwd_new_old_same">新密码不能与原密码一样</string>
     <string name="update_paypwd_submit">确认修改</string>
     <string name="update_paypwd_title">修改支付密码</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="use_login_button">请改用“登录”按钮</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="user_info_assets_info">资产信息</string>
     <string name="user_info_company_info">公司信息</string>
@@ -1245,7 +1245,7 @@ function login(form){
     <string name="user_info_my_integral">我的积分</string>
     <string name="user_info_personal_info">个人信息</string>
     <string name="user_info_title">用户信息</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="vkontakte">VK</string>
     <string name="website">http://www.mob.com</string>
@@ -1257,7 +1257,7 @@ function login(form){
     <string name="weibo_upload_content">分享图片</string>
     <string name="whatsapp">WhatsApp</string>
     <string name="whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="withdraw_account_name">开户名</string>
     <string name="withdraw_money_hint">请输入提现金额</string>
@@ -1276,13 +1276,13 @@ function login(form){
     <string name="yibao_register_title">汇付托管注册</string>
     <string name="yibao_unbind_card_title">汇付解绑银行卡</string>
     <string name="yibao_withdraw_title">汇付提现</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/ssdk_strings.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/ssdk_strings.xml -->
     <eat-comment/>
     <string name="yixin">易信</string>
     <string name="yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
     <string name="yixinmoments">易信朋友圈</string>
     <string name="youdao">有道云笔记</string>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/actionsheet__theme.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/actionsheet__theme.xml -->
     <eat-comment/>
     <style name="ActionSheetStyleIOS7">
         <item name="actionSheetBackground">@android:color/transparent</item>
@@ -1298,7 +1298,7 @@ function login(form){
         <item name="cancelButtonMarginTop">10dp</item>
         <item name="actionSheetTextSize">16sp</item>
     </style>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -1340,7 +1340,7 @@ function login(form){
         <item name="android:textColor">@drawable/skin_color_button</item>
         <item name="android:background">@drawable/common_btn_red</item>
     </style>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/attr.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/attr.xml -->
     <eat-comment/>
     <style name="CustomDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -1353,7 +1353,7 @@ function login(form){
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MyDialog" parent="@android:Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -1434,7 +1434,7 @@ function login(form){
         <item name="android:windowBackground">@drawable/bg</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/values/attr.xml -->
+    <!-- From: file:/D:/work/app/hehehh/app/src/main/res/values/attr.xml -->
     <eat-comment/>
     <style name="text_content_style">
         <item name="android:textSize">@dimen/font_size_16sp</item>
