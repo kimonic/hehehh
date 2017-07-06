@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/iv_notify_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/v5_logo" />
+
+    <TextView
+        android:id="@+id/tv_notify_upgrade_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_notify_icon"
+        android:layout_toRightOf="@+id/iv_notify_icon"
+        android:text="准备下载"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/pb_notify_upgrade"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_notify_icon"
+        android:layout_below="@+id/tv_notify_upgrade_msg"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toRightOf="@+id/iv_notify_icon" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_centerVertical="true"
+        android:text="暂停"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="取消"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+<!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/upgrade_notification.xml -->

@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_account_security_title_layout"
+        layout="@layout/activity_titlelayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_size_10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_account_security_level_title"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_15sp" />
+
+        <TextView
+            android:id="@+id/activity_account_security_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5dp"
+            android:layout_marginRight="@dimen/margin_size_5dp"
+            android:textColor="@color/coral"
+            android:textSize="@dimen/font_size_17sp" />
+
+        <TextView
+            android:id="@+id/activity_account_security_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_account_security_level_tip"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_account_security_no_authentication_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_size_10dp"
+        android:paddingRight="@dimen/margin_size_10dp" >
+
+        <ImageView
+            android:id="@+id/activity_account_security_no_authentication_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mnull"
+            android:src="@drawable/box_off" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_weight="1"
+            android:text="@string/activity_account_security_realname"
+            android:textSize="@dimen/font_size_17sp" />
+
+        <TextView
+            android:id="@+id/activity_account_security_no_authentication_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_account_security_no_authentication"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/activity_account_security_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_size_10dp"
+        android:paddingRight="@dimen/margin_size_10dp" >
+
+        <ImageView
+            android:id="@+id/activity_account_security_email_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mnull"
+            android:src="@drawable/box_off" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_weight="1"
+            android:text="@string/activity_account_security_email"
+            android:textSize="@dimen/font_size_17sp" />
+
+        <TextView
+            android:id="@+id/activity_account_security_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_account_security_no_authentication"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/activity_account_security_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_size_10dp"
+        android:paddingRight="@dimen/margin_size_10dp" >
+
+        <ImageView
+            android:id="@+id/activity_account_security_phone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mnull"
+            android:src="@drawable/box_off" />
+
+        <TextView
+            android:id="@+id/activity_account_security_phone_number_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_weight="1"
+            android:text="@string/activity_account_security_phone"
+            android:textSize="@dimen/font_size_17sp" />
+
+        <TextView
+            android:id="@+id/activity_account_security_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_account_security_no_authentication"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/activity_account_security_login_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_size_10dp"
+        android:paddingRight="@dimen/margin_size_10dp" >
+
+        <ImageView
+            android:id="@+id/activity_account_security_login_password_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mnull"
+            android:src="@drawable/box_off" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_weight="1"
+            android:text="@string/activity_account_security_login_password"
+            android:textSize="@dimen/font_size_17sp" />
+
+        <TextView
+            android:id="@+id/activity_account_security_login_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_account_security_no_authentication"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_17sp" />
+    </LinearLayout>
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/margin_size_0.1dp" -->
+    <!-- android:background="@color/gray" /> -->
+
+    <Button
+        android:id="@+id/activity_account_security_huifu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/activity_account_security_huifu"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

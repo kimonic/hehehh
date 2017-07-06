@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    tools:context=".DetaileProblemActivity" >
+
+<include layout="@layout/layout_common_title_bar"/>
+
+    <WebView
+        android:id="@+id/detaileproblem_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_detaile_problem.xml -->

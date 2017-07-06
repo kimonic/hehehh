@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/bid_title_bar"
+        layout="@layout/investmentdetailsactivity_titlelayout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_50dp"
+        android:layout_marginTop="10.0dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/payment_password"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="输入新的支付密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/show_payment_password_RelativeLayout "
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp" >
+
+            <ImageView
+                android:id="@+id/show_payment_password"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_imageview_payment"
+                android:padding="10dp"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_50dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/payment_password_again"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="确认新的支付密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/show_payment_password_again_RelativeLayout "
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp" >
+
+            <ImageView
+                android:id="@+id/show_payment_password_again"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_imageview_payment"
+                android:padding="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_50dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/login_password"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="登录密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+    
+    <Button
+        android:id="@+id/confirm_button"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="确认设置" />
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_payment_layout.xml -->

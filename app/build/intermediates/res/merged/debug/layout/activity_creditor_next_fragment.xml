@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_btn_while" >
+
+        <RelativeLayout
+            android:id="@+id/transfer_record_relayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_blue_btn_left_press" >
+
+            <TextView
+                android:id="@+id/transfer_record_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="转让记录"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Purchase_records_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/Purchase_records_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="购买记录"
+                android:textColor="@color/dark_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="债权价值（元）"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="待还总期数"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="状态"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/font_size_16sp" />
+    </LinearLayout>
+
+<!--   <com.diyou.view.LoadingLayout
+        android:visibility="visible"
+        android:id="@+id/project_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout> -->
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/transfer_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_size_10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        android:visibility="visible" >
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/purchase_records_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_size_10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        android:visibility="visible" >
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_creditor_next_fragment.xml -->

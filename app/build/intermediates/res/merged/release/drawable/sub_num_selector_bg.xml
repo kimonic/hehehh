@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:drawable="@drawable/sub_num_normal"/>
+    <item android:state_enabled="false" android:drawable="@drawable/sub_num_disable"/>
+</selector><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/sub_num_selector_bg.xml -->

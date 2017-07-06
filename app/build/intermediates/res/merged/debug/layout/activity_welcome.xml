@@ -1,0 +1,8 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_home"
+    tools:context=".WelcomeActivity" >
+
+</RelativeLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_welcome.xml -->

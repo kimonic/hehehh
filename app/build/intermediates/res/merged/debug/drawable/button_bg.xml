@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/lanse" android:startColor="@color/lanse" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+    <item android:state_pressed="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/lanse_press" android:startColor="@color/lanse_press" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+    <item android:state_checkable="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/lanse" android:startColor="@color/lanse" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+    <item android:state_checked="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/lanse" android:startColor="@color/lanse" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+    <item android:state_enabled="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/lanse" android:startColor="@color/lanse" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+    <item android:state_enabled="false"><shape>
+            <gradient android:angle="270" android:endColor="@color/gray" android:startColor="@color/gray" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+    <item><shape>
+            <gradient android:angle="270" android:endColor="@color/green" android:startColor="@color/green" />
+
+            <size android:height="60dp" android:width="320dp" />
+
+            <corners android:radius="3dp" />
+        </shape></item>
+
+</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/button_bg.xml -->

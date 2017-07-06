@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/creditorrightstransferlist_loadlayout"
+        layout="@layout/loading" />
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/creditorrightstransferlist_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:listSelector="@drawable/listview_selector"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/margin_size_5dp"
+        android:paddingRight="@dimen/margin_size_5dp">
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

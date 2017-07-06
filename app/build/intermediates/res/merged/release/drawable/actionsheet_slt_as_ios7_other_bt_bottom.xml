@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/actionsheet_bottom_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/actionsheet_bottom_normal"/>
+
+</selector><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/actionsheet_slt_as_ios7_other_bt_bottom.xml -->

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash01">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_size_10dp"
+            android:text="@string/title_activity_register_success"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18sp" />
+
+        <TextView
+            android:id="@+id/title_activity_register_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_size_10dp"
+            android:layout_marginTop="@dimen/margin_size_10dp"
+            android:text="@string/title_activity_register_skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/default_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_activity_register_success"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_50dp"
+                android:background="@color/yellow_low"
+                android:drawableLeft="@drawable/page_control_n"
+                android:gravity="center_horizontal"
+                android:text="@string/title_activity_register_tip"
+                android:textColor="@color/dimgray"
+                android:textSize="@dimen/font_size_15sp" />
+
+            <Button
+                android:id="@+id/title_activity_register_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:text="@string/title_activity_register_activication"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_register_success_no_activication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_size_10dp"
+                android:layout_marginTop="@dimen/margin_size_10dp"
+                android:gravity="right"
+                android:text="@string/title_activity_register_no_activication"
+                android:textColor="@color/dimgray"
+                android:textSize="@dimen/font_size_15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_register_success.xml -->

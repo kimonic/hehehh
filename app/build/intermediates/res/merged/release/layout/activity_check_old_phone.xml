@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_update_phone_number_title_layout"
+        layout="@layout/layout_common_title_bar" />
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp" >
+
+        <TextView
+            android:id="@+id/tv_phone_code_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_change_old_phone" />
+
+        <TextView
+            android:id="@+id/tv_phone_bind_display"
+            style="@style/common_black_mid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/investment_fragment_item_bg"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_phone_code"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/bind_phone_input_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="8dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+			android:background="@color/layout_bg" />
+
+        <Button
+            android:id="@+id/btn_send_phone_code"
+            style="@style/button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/registeractivity_send_verification_code"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_phone_change_number_next"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:text="@string/bind_phone_next"
+        android:textColor="@drawable/button_textcolor"
+        android:textSize="16sp"
+        android:enabled="false" />
+
+    <RelativeLayout
+        android:id="@+id/rl_phone_code_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_phone_code_msg_type"
+            style="@style/common_gray_small_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/bind_phone_remind_msg1" />
+
+        <TextView
+            android:id="@+id/tv_phone_code_msg_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_phone_code_msg_type"
+            android:layout_toRightOf="@+id/tv_phone_code_msg_type"
+            android:text="@string/common_display_phone_default"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/common_gray_small_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_phone_code_msg_account"
+            android:layout_toRightOf="@+id/tv_phone_code_msg_account"
+            android:text="@string/bind_phone_remind_msg2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/common_gray_small_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_phone_code_msg_type"
+            android:layout_below="@+id/tv_phone_code_msg_type"
+            android:text="@string/bind_phone_remind_msg3" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_check_old_phone.xml -->

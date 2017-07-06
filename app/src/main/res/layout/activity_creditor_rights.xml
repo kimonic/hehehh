@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/creditorrgihty_titlelayout"
+        layout="@layout/activity_titlelayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size_0.5dp"
+        android:background="@color/layout_title_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10dp" >
+
+            <TextView
+                android:layout_width="@dimen/margin_size_150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/creditorrgihty_assignment_incestment_money"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+
+            <TextView
+                android:id="@+id/creditorrgihty_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10dp" >
+
+            <TextView
+                android:layout_width="@dimen/margin_size_150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/creditorrgihty_assignment_max_money"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+
+            <TextView
+                android:id="@+id/creditorrgihty_highestPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_10dp"
+            android:layout_marginTop="@dimen/margin_size_10dp" >
+
+            <TextView
+                android:layout_width="@dimen/margin_size_150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/creditorrgihty_counter_fee"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+
+            <TextView
+                android:id="@+id/creditorrgihty_poundage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.5dp"
+        android:layout_marginTop="@dimen/margin_size_10dp"
+        android:background="@color/gray" />
+
+    <EditText
+        android:id="@+id/creditorrgihty_editText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_50dp"
+        android:background="@color/white"
+        android:digits="1234567890-."
+        android:hint="@string/creditorrgihty_assignment_money"
+        android:inputType="number"
+        android:paddingLeft="@dimen/margin_size_10dp"
+        android:textSize="@dimen/font_size_18sp" >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.5dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/creditorrgihty_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_50dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_size_10dp"
+        android:background="@drawable/button_bg"
+        android:enabled="false"
+        android:text="@string/creditorrgihty_check_assignment"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

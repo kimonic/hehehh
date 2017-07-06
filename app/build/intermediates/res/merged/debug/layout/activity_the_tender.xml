@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/layout_bg"
+    tools:context=".TheTenderActivity" >
+
+    <include
+        android:id="@+id/thetenderactivity_titlelayout"
+        layout="@layout/activity_titlelayout" /><include
+        android:id="@+id/thetenderactivity_loading"
+        layout="@layout/loading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:background="#49bda6"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/thetenderactivity_amount_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="100.00"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thetenderactivity_amount_available"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/thetenderactivity_bid_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/investment_fragment_item_bg1"
+        android:hint="@string/thetenderactivity_bid_amount"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/thetenderactivity_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/investment_fragment_item_bg1"
+        android:hint="@string/thetenderactivity_bid_amount"
+        android:password="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/thetenderactivity_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:enabled="false"
+        android:text="@string/thetenderactivity_submit_the_tender"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_the_tender.xml -->

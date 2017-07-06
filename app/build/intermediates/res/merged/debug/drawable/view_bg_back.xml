@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/activity_bg" android:state_pressed="true"/>
+    <item android:drawable="@color/white"/>
+
+</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/view_bg_back.xml -->

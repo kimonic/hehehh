@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/layout_title_bg" >
+
+        <TextView
+            android:id="@+id/accountfragment_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/accountfragment_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/myfragment_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/myfragment_no_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/no_login"
+        android:visibility="visible" />
+
+    <com.diyou.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/accountfragment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="never" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.diyou.view.CircleImageView
+                        android:id="@+id/settingfragment_usericon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/default_2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/settingfragment_usericon"
+                        android:layout_marginRight="@dimen/margin_size_5dp"
+                        android:contentDescription="@string/mnull"
+                        android:src="@drawable/table_arrow" />
+
+                    <LinearLayout
+                        android:id="@+id/settingfragment_user_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignBottom="@+id/settingfragment_usericon"
+                        android:layout_alignTop="@+id/settingfragment_usericon"
+                        android:layout_toRightOf="@+id/settingfragment_usericon"
+                        android:orientation="vertical" >
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/accountfragment_username_tv" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="30dp" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:text="张三" -->
+                        <!-- android:textAppearance="?android:attr/textAppearanceLarge" -->
+                        <!-- android:textSize="@dimen/row_title" /> -->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/accountfragment_account_name"
+                                android:textColor="#bbbbbb"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/accountfragment_account_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/accountfragment_huifu_accoun_name"
+                                android:textColor="#bbbbbb"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/accountfragment_huifu_accoun_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.diyou.view.DashedLineView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_size_10dp"
+                    android:layout_marginLeft="@dimen/margin_size_10dp"
+                    android:layout_marginRight="@dimen/margin_size_10dp"
+                    android:src="@color/dimgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/accountfragment_earnings_instructions_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/accountfragment_earnings_instructions"
+                        android:textColor="#bbbbbb" />
+
+                    <TextView
+                        android:id="@+id/accountfragment_accumulated_earnings_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="35sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eff9f8"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accountfragment_account_balance_yuan"
+                        android:textSize="@dimen/row_sumtitle" />
+
+                    <TextView
+                        android:id="@+id/accountfragment_account_balance_yuan_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/row_sumtitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/accountfragment_collecting_income"
+                        android:textSize="@dimen/row_sumtitle" />
+
+                    <TextView
+                        android:id="@+id/accountfragment_collecting_income_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/row_sumtitle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accountfragment_freeze_funds"
+                        android:textSize="@dimen/row_sumtitle" />
+
+                    <TextView
+                        android:id="@+id/accountfragment_freeze_funds_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/row_sumtitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/accountfragment_collecting_principal"
+                        android:textSize="@dimen/row_sumtitle" />
+
+                    <TextView
+                        android:id="@+id/accountfragment_collecting_principal_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/row_sumtitle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginTop="20dp"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:id="@+id/accountfragment_money_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/accountfragment_money_management"
+                    android:textSize="@dimen/row_title" />
+
+                <TextView
+                    android:id="@+id/accountfragment_money_management_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/imageView1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/unChecked"
+                    android:textSize="@dimen/row_sumtitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/accountfragment_money_management_tv"
+                    android:gravity="center_vertical"
+                    android:text="@string/accountfragment_account_balance"
+                    android:textColor="#bbbbbb"
+                    android:textSize="@dimen/row_sumtitle" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/mnull"
+                    android:src="@drawable/table_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="15dp"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:id="@+id/accountfragment_my_bankcard_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/accountfragment_mybankcard"
+                    android:textSize="@dimen/row_title" />
+
+                <TextView
+                    android:id="@+id/accountfragment_mybankcard_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/unChecked"
+                    android:textSize="@dimen/row_sumtitle" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/mnull"
+                    android:src="@drawable/table_arrow" />
+            </RelativeLayout>
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0.8dp" -->
+            <!-- android:layout_marginLeft="15dp" -->
+            <!-- android:background="#dddddd" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="60dp" -->
+            <!-- android:background="@color/white" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_marginLeft="15dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:text="@string/accountfragment_coupons" -->
+            <!-- android:textSize="@dimen/row_title" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/accountfragment_coupons_tv" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_toLeftOf="@+id/imageView3" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:textColor="#bbbbbb" -->
+            <!-- android:textSize="@dimen/row_sumtitle" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/imageView3" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:contentDescription="@string/mnull" -->
+            <!-- android:src="@drawable/table_arrow" /> -->
+            <!-- </RelativeLayout> -->
+
+            <TextView
+                android:id="@+id/accountfragment_has_cast_project"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableRight="@drawable/table_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="@string/accountfragment_has_cast_project"
+                android:textSize="@dimen/row_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="15dp"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/accountfragment_creditor_rights_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:drawableRight="@drawable/table_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="@string/accountfragment_creditor_rights_transfer"
+                android:textSize="@dimen/row_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="15dp"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/accountfragment_transaction_details"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:drawableRight="@drawable/table_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="@string/accountfragment_transaction_details"
+                android:textSize="@dimen/row_title" />
+
+            <RelativeLayout
+                android:id="@+id/accountfragment_security_account"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/accountfragment_security_account"
+                    android:textSize="@dimen/row_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/accountfragment_security_level_tv"
+                    android:gravity="center_vertical"
+                    android:text="@string/accountfragment_security_level"
+                    android:textColor="#bbbbbb" />
+
+                <TextView
+                    android:id="@+id/accountfragment_security_level_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/imageView4"
+                    android:gravity="center_vertical"
+                    android:text="低"
+                    android:textColor="#e1a323"
+                    android:textSize="@dimen/row_sumtitle" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/mnull"
+                    android:src="@drawable/table_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="15dp"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:id="@+id/accountfragment_gestures"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/accountfragment_gestures_password"
+                    android:textSize="@dimen/row_title" />
+
+                <TextView
+                    android:id="@+id/accountfragment_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/imageView5"
+                    android:gravity="center_vertical"
+                    android:textColor="#bbbbbb"
+                    android:textSize="@dimen/row_sumtitle" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/mnull"
+                    android:src="@drawable/table_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.diyou.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/fragment_account.xml -->

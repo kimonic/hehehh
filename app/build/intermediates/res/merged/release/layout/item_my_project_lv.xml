@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_my_invest_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/common_display_title_default"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:maxWidth="100dp"
+        android:ellipsize="end"
+        android:textSize="18sp" 
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_my_invest_item_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:maxWidth="100dp"
+        android:layout_below="@+id/tv_my_invest_item_title"
+        android:text="@string/common_display_money_default"
+        android:textColor="@color/black"
+        android:textSize="15sp" 
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_my_invest_item_amount"
+        android:text="@string/my_investment_invest_money"
+        android:textSize="12sp"
+        android:textColor="@color/huise" 
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_my_invest_item_award_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_my_invest_item_amount"
+        android:layout_alignBottom="@+id/tv_my_invest_item_amount"
+        android:layout_centerHorizontal="true"
+        android:text="@string/common_display_money_default"
+        android:textSize="15sp"
+        android:textColor="@color/chengse" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/personal_center_right" />
+
+    <TextView
+        android:id="@+id/tv_my_invest_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_my_invest_item_title"
+        android:layout_alignBottom="@+id/tv_my_invest_item_title"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="@string/common_display_time_default"
+        android:textSize="12sp"
+        android:textColor="@color/huise" 
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_my_invest_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_my_invest_item_time"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_alignBaseline="@+id/tv_my_invest_item_award_interest"
+        android:text="@string/common_display_status_default"
+        android:textSize="15sp"
+        android:textColor="@color/huise"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/tv_my_invest_item_award_interest"
+        android:text="@string/my_investment_sum_income"
+        android:textSize="12sp"
+        android:textColor="@color/huise" />
+
+</RelativeLayout>
+<!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/item_my_project_lv.xml -->

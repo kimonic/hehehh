@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.1"
+        applicationId = 'com.diyou.javahf.shcf'
+        manifestPlaceholders = [APP_NAME: "土豆金服",
+                                APP_URL : "http://dev-m.shcf.diyou.cc"]
+        /*manifestPlaceholders = [APP_NAME: "土豆金服",
+                                APP_URL : "http://xiaohuyu.imwork.net"]*/
+        /*manifestPlaceholders = [APP_NAME: "土豆金服",
+                                APP_URL : "http://javadev.picp.net:27032"]*/
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles 'proguard-project.txt'
+            shrinkResources true    //移除无用的resource文件
+            zipAlignEnabled true  //zipAlign优化
+            buildConfigField "boolean", "LOG_DEBUG", "false"//关闭调试log
+        }
+    }
+
+    lintOptions {
+        abortOnError false //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+        disable 'MissingTranslation'// 防止在发布的时候出现因MissingTranslation导致Build Failed!
+    }
+
+    productFlavors {
+    }
+
+    //修改生成的apk名字
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            def releaseApkName = ''
+            if (variant.buildType.name.equals('release')) {
+//                println(variant.productFlavors[0].name)
+                if (variant.productFlavors[0] != null) {
+                    releaseApkName = 'java-hf-shcf-' + variant.productFlavors[0].name + '-v' + versionName + '-' + getDate() + '.apk'
+                } else {
+                    releaseApkName = 'java-hf-shcf-v' + versionName + '-' + getDate() + '.apk'
+                }
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+            if (variant.buildType.name.equals('debug')) {
+
+            }
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.0.1'
+    compile files('libs/android-async-http-1.4.8.jar')
+    compile files('libs/core.jar')
+    compile files('libs/eventbus.jar')
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/GetuiSdk2.5.0.0.jar')
+    compile files('libs/MobLogCollector.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/ShareSDK-Core-2.6.1.jar')
+    compile files('libs/ShareSDK-QQ-2.6.1.jar')
+    compile files('libs/ShareSDK-QZone-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.1.jar')
+    compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+}
+
+//获取时间戳
+def getDate() {
+    return new Date().format('MMddHHmm')
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true" android:drawable="@drawable/shape_blue_btn_bg_press"></item>
+<item android:drawable="@drawable/shape_blue_btn_bg"></item>
+</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/selector_btn_blue.xml -->

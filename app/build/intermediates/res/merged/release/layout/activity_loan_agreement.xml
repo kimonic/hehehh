@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_bg"
+    tools:context=".LoanAgreementActivity" >
+
+    <include
+        android:id="@+id/loanagreementactivity_titlelayout"
+        layout="@layout/activity_titlelayout" />
+
+    <ProgressBar
+        android:id="@+id/loanagreementactivity_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:progressDrawable="@drawable/web_barbgimg" />
+
+    <WebView
+        android:id="@+id/loanagreementactivity_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_loan_agreement.xml -->

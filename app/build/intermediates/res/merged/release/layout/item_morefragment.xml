@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f9f9"
+    android:orientation="vertical" >
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/morefragment_item_newbie_guide_tv" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="60dp" -->
+    <!-- android:drawableRight="@drawable/table_arrow" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:paddingLeft="20dp" -->
+    <!-- android:paddingRight="15dp" -->
+    <!-- android:text="@string/morefragment_item_newbie_guide" -->
+    <!-- android:textSize="@dimen/row_title" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0.8dp" -->
+    <!-- android:background="#dddddd" /> -->
+
+    <RelativeLayout
+        android:id="@+id/morefragment_update_inspection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/morefragment_item_updateVersion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/table_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/morefragment_update_inspection"
+            android:textSize="@dimen/row_title" />
+
+        <TextView
+            android:id="@+id/morefragment_version_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:textColor="#bbbbbb"
+            android:textSize="@dimen/row_sumtitle" />
+    </RelativeLayout>
+
+<!--     <TextView -->
+<!--         android:id="@+id/morefragment_item_haveFeedback" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="60dp" -->
+<!--         android:drawableRight="@drawable/table_arrow" -->
+<!--         android:gravity="center_vertical" -->
+<!--         android:paddingLeft="20dp" -->
+<!--         android:paddingRight="15dp" -->
+<!--         android:text="@string/morefragment_feedback" -->
+<!--         android:textSize="@dimen/row_title" /> -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/morefragment_item_telephone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/table_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/morefragment_telephone"
+            android:textSize="@dimen/row_title" />
+
+        <TextView
+            android:id="@+id/morefragment_item_contactPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/morefragment_phone_number"
+            android:textColor="#bbbbbb"
+            android:textSize="@dimen/row_sumtitle" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:layout_marginTop="2dp"
+        android:text="@string/morefragment_working_time1"
+        android:textColor="#bbbbbb"
+        android:textSize="@dimen/row_sumtitle" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="right"
+        android:text="@string/morefragment_working_time2"
+        android:textColor="#bbbbbb"
+        android:textSize="@dimen/row_sumtitle" />
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/item_morefragment.xml -->

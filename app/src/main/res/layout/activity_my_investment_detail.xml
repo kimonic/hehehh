@@ -1,0 +1,438 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyInvestmentDetailActivity" 
+    android:background="@color/layout_bg">
+
+    <include
+        android:id="@+id/activity_my_investment_title"
+        layout="@layout/layout_common_title_bar" />
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/my_investment_detail_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+    </com.diyou.view.LoadingLayout>
+
+<!-- <ScrollView -->
+    <com.diyou.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/sc_my_investment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_invest_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_size_10dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/common_display_title_default"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_20sp"
+                        android:layout_toLeftOf="@+id/tv_invest_detail_status" />
+
+
+                    <TextView
+                        android:id="@+id/tv_invest_detail_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_invest_detail_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/common_display_status_default"
+                        android:textColor="@color/lanse"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/success_transfer_amount_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:text="@string/invest_detail_borrow_no"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/success_transfer_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/success_transfer_amount_textView"
+                        android:textColor="@color/dark_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/creditor_transfer_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/invest_detail_apr"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/creditor_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/creditor_transfer_textview"
+                        android:textColor="@color/dark_gray" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/successful_import_amount_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invest_detail_repay_type"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/successful_import_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/successful_import_amount_textview"
+                        android:textColor="@color/dark_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/creditor_import_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:text="@string/invest_detail_borrow_time"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/creditor_import"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/creditor_import_textview"
+                        android:textColor="@color/dark_gray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_protocolView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/common_check"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp"
+                    android:layout_toLeftOf="@+id/tv_agreement_borrow" />
+
+                <TextView
+                    android:id="@+id/tv_agreement_borrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp"
+                    android:text="@string/common_loan_agreement" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selector_btn_while" >
+
+                    <RelativeLayout
+                        android:id="@+id/transfer_record_relayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_blue_btn_left_press" >
+
+                        <TextView
+                            android:id="@+id/transfer_record_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/invest_detail_borrow_detail"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Purchase_records_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/Purchase_records_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/invest_detail_refund_detail"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:gravity="center"
+                        android:text="@string/invest_detail_credior_money"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/invest_detail_periods"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:gravity="center"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_16sp" />
+                </LinearLayout>
+
+<!--                 <com.diyou.view.ScrollableListView
+                    android:id="@+id/transfer_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_size_10dp"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadeScrollbars="true"
+                    android:fadingEdge="vertical"
+                    android:fastScrollEnabled="true"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@android:color/transparent"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" >
+                </com.diyou.view.ScrollableListView> -->
+                <LinearLayout
+                    android:id="@+id/ll_invest_borrow_detail"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="@dimen/margin_size_10dp"
+                        android:text="@string/invest_detail_invest_money"
+                        android:textColor="@color/light_gray" />
+                    <TextView
+                        android:id="@+id/tv_invest_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_alignBaseline="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:textColor="@color/dark_gray" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/invest_detail_sum_income"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_invest_sum_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:textColor="@color/dark_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/invest_detail_income_yes"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_invest_already_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:textColor="@color/dark_gray" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/invest_detail_wait_capital"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_invest_wait_capital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:textColor="@color/dark_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_15dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:ems="4"
+                        android:gravity="right"
+                        android:text="@string/invest_detail_aword_money"
+                        android:textColor="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_invest_award_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_20dp"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:textColor="@color/dark_gray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+                <com.diyou.view.ScrollableListView
+                    android:id="@+id/purchase_records_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_size_10dp"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadeScrollbars="true"
+                    android:fadingEdge="vertical"
+                    android:fastScrollEnabled="true"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@android:color/transparent"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" >
+                </com.diyou.view.ScrollableListView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- </ScrollView> -->
+    </com.diyou.pulltorefresh.PullToRefreshScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/investment_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/investment_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null">
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/fragment_listinvestment.xml -->

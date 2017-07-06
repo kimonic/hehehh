@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+       
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/common_gray_small_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请绑定通过实名认证的本人银行卡"
+            android:textColor="@color/huise" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/investment_fragment_item_bg"
+        android:gravity="center_vertical" 
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_add_bank_person_name"
+            style="@style/common_black_mid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="原绑定卡号" />
+
+        <TextView
+            android:id="@+id/tv_change_bank_old_account"
+            style="@style/common_black_mid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="卡号" />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="输入原卡号" 
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_change_bank_old"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/textView4"
+                android:hint="请输入原卡号"
+                android:gravity="center_vertical|right"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+         
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="输入新卡号" 
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_change_bank_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/textView5"
+                android:hint="请输入新卡号"
+                android:gravity="center_vertical|right"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+         
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="确认新卡号" 
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_change_bank_new_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/textView6"
+                android:hint="请确认新卡号"
+                android:gravity="center_vertical|right"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+         
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_change_bank_select_bank"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_change_bank_name"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_right1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_add_bank_type"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="选择开户行"/>
+
+            
+
+            <ImageView
+                android:id="@+id/iv_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal_center_right" />
+
+        </RelativeLayout>
+        
+		<RelativeLayout
+		    android:id="@+id/rl_change_bank_select_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_add_bank_city"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="开户行所在省市" 
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_change_bank_province"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/common_black_mid_textView"
+                android:background="@color/white"
+                android:layout_toLeftOf="@+id/tv_change_bank_city"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_change_bank_city"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toLeftOf="@+id/iv_right3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center" />
+            
+
+            <ImageView
+                android:id="@+id/iv_right3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal_center_right" />
+
+        </RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_add_bank_name"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="开户行名称" 
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_change_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/tv_add_bank_name"
+                android:hint="填写银行卡开户行名称"
+                android:gravity="center_vertical|right"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_change_bank_submit"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/margin_size_10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/addbankcardactivity_submit" />
+     </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_change_bank_card.xml -->

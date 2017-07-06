@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    tools:context=".BankCardManagerActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/layout_common_title_bar" />
+
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include1"></com.diyou.view.LoadingLayout>
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include1"
+        android:background="@color/layout_bg"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"
+        android:overScrollMode="never">
+
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+
+</RelativeLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_bank_card_manager.xml -->

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\classes-11d1b70638fc3ae7a2eb157ccadac22f77f9740b.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\universal-image-loader-1.8.6-with-sources.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9ad605dd55be2e74e614b2ab2ff466439c4461b7">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.8.6-with-sources-bf846a39d46d80206edf5f957fe81b1b1046e67b.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\MobTools.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c9107069ca744840137b9b0fad95d5f57d8d9491">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\MobTools-609e2429bfcedbff419d6b9d44ae8671f70e963b.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.8-84df0b9d01878b2f77ddb9e40ed1ea9c358db4bc.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\core.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="11151a394c60db184c2617efd475b10379acf0ae">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\core-440f889336f33598554b08f21b5a11bbb71b161a.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-Wechat-Core-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e27ab7ede987ff7bdac4979741c9f7c2e3254de7">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.6.1-c39d8dd4464f38a30ff8449cf1c7c702c03ea5d3.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\GetuiExt-2.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7825bfa9135d693e2046eab96fd94e724e0f9eda">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\GetuiExt-2.0.3-62ac2a5134cadf7ee7be4d7b2f03e0de74dcce0a.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\MobLogCollector.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c804b0e7238e94bb9c89381c90336116509473d7">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\MobLogCollector-25321c552fedcaecde82cf742f14456313812df9.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-Wechat-Moments-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5663cf8a7e19f53eb43eb26b4c2051a9298b789d">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.6.1-01739d649c6b2b2409d44d55ef540691a1d30f95.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\eventbus.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="95ded2eae63208b4382a8750d30cdfd83a99da8c">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\eventbus-399b1dcac606d08abea90ddf036ad03469059996.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-QZone-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1e3749d839864304229a1165f662a429d17241a3">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-QZone-2.6.1-a834ab4794a99036e5bd8e78bfa379ce7bd5924b.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-Core-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="da6215cd1f64dd814f2f646a3d4b088c70d0587e">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.6.1-0b915b1a365519562cce7627296623886a70169e.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-Wechat-Favorite-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="65737d9d3cb99ef72493b19112067066bbd211bd">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Favorite-2.6.1-31373d977165b9b27583a1f24f1c8470dfdf73cc.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14-dda813e19ddf5246799ca3b8c314d692c2c3be45.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-Wechat-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cc280ae2e35362f52f69abc8c0880eaad75a6b98">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.6.1-d9da66fb36b82ab40cafb447ad4d786b64f01160.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-60507c7646f6783e18f31466b10a5d962f0c4902.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\ShareSDK-QQ-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="709cf3dfb468faf7d2b340deaf4e7f45f9de4e30">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\ShareSDK-QQ-2.6.1-c4150e2d66eb3554788dbd3748c31a48af26ec3a.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\libs\GetuiSdk2.5.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="662a392693d1c2b781c336cd4131883ec829884c">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\GetuiSdk2.5.0.0-49a60cae104f30fcfd9ed5191bbd42881dcb21df.jar" />
+    </item>
+    <item
+        jar="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-feceaee633de74f35ee265846bebed061c29d7af.jar" />
+    </item>
+
+</items>

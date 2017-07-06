@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_exit_login_title_layout"
+        layout="@layout/activity_titlelayout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/white">
+
+        <com.diyou.view.CircleImageView
+            android:id="@+id/activity_exit_login_usericon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/default_2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/activity_exit_login_usericon"
+            android:layout_alignTop="@+id/activity_exit_login_usericon"
+            android:layout_toRightOf="@+id/activity_exit_login_usericon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/accountfragment_username_tv" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="张三" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceLarge" -->
+            <!-- android:textSize="@dimen/row_title" /> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/accountfragment_account_name"
+                    android:textColor="#bbbbbb" />
+
+                <TextView
+                    android:id="@+id/activity_exit_login_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="zhangsan"
+                    android:textSize="@dimen/row_sumtitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/accountfragment_huifu_accoun_name"
+                    android:textColor="#bbbbbb" />
+
+                <TextView
+                    android:id="@+id/activity_exit_login_accoun_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="zhangsan123"
+                    android:textSize="@dimen/row_sumtitle" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_exit_login_sumit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_size_10dp"
+        android:layout_marginRight="@dimen/margin_size_10dp"
+        android:layout_marginTop="@dimen/margin_size_10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/title_activity_exit_login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

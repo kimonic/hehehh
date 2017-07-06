@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical"
+    tools:context=".SettingActivity" >
+
+    <include layout="@layout/layout_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+                android:id="@+id/rl_setting_common_set"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_detail_button_height"
+                android:background="@drawable/investment_fragment_item_bg"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+        android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting_common_set" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/common_black_mid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_common_setting"
+                    android:layout_marginLeft="30dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/personal_center_right"
+                    android:layout_margin="8dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/NoticeListActivity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_detail_button_height"
+                android:background="@drawable/investment_fragment_item_bg"
+                android:gravity="center_vertical"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting_site_notice" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/common_black_mid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_site_notice"
+                    android:layout_marginLeft="30dp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/personal_center_right"
+                    android:layout_margin="8dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/settingactivity_commonproblems"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_detail_button_height"
+                android:background="@drawable/investment_fragment_item_bg"
+                android:gravity="center_vertical"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting_offen_question" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/common_black_mid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_offen_question"
+                    android:layout_marginLeft="30dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/personal_center_right"
+                    android:layout_margin="8dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_setting_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_detail_button_height"
+                android:background="@drawable/investment_fragment_item_bg"
+                android:gravity="center_vertical"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting_contact_us" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/common_black_mid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_contact_us"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_setting_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView6"
+                    android:layout_margin="8dp"
+                    tools:text="@string/common_display_phone_default"
+                    android:textColor="@color/qianlanse" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/personal_center_right"
+                    android:layout_margin="8dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_setting_version_check"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_detail_button_height"
+                android:background="@drawable/investment_fragment_item_bg"
+                android:gravity="center_vertical"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting_version_check" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/common_black_mid_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_version_check"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_setting_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:text="@string/common_display_version_default"
+                    android:textColor="@color/qianlanse" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/setting_exit_login"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/setting_exit_login" />
+
+</LinearLayout>
+<!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_setting.xml -->

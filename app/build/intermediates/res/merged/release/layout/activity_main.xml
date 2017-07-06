@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/indicator_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/investment_fragment_item_bg1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_check1"
+            android:gravity="center|bottom"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            android:text="@string/mainactivity_tab_home"
+            android:textColor="@drawable/fontcolor"
+            android:textSize="@dimen/mainactivity_tabsize" />
+
+        <RadioButton
+            android:id="@+id/indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_check2"
+            android:gravity="center|bottom"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            android:text="@string/mainactivity_tab_investment"
+            android:textColor="@drawable/fontcolor"
+            android:textSize="@dimen/mainactivity_tabsize" />
+
+        <RadioButton
+            android:id="@+id/indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_check4"
+            android:gravity="center|bottom"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            android:text="@string/mainactivity_tab_account"
+            android:textColor="@drawable/fontcolor"
+            android:textSize="@dimen/mainactivity_tabsize" />
+    </RadioGroup>
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_main.xml -->

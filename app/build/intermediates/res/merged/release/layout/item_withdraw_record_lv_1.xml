@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="70dip"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_withdraw_item_money"
+            style="@style/common_gray_small_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_withdraw_item_time"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/common_black_mid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_withdraw_item_money"
+            android:layout_marginTop="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_item_time"
+            style="@style/common_gray_small_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_item_status"
+            style="@style/common_black_mid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:singleLine="true" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="16dip"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/table_arrow" />
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/item_withdraw_record_lv_1.xml -->

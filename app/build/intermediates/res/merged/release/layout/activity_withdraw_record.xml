@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WithdrawRecordActivity"
+    android:background="@color/layout_bg" >
+
+    <include layout="@layout/layout_common_title_bar" />
+ <com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_withdraw_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"        
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true">
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+</LinearLayout>
+<!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_withdraw_record.xml -->

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_150dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homefragment_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_size_150dp"
+            android:background="@color/white" >
+        </android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/homefragment_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homefragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:bufferType="normal"
+            android:text="@string/homefragment_ad"
+            android:textColor="@color/layout_title_bg"
+            android:textSize="@dimen/font_size_18sp" />
+
+        <Button
+            android:id="@+id/homefragment_login_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/margin_size_80dp"
+            android:layout_height="@dimen/margin_size_35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_size_5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_title_frame"
+            android:bufferType="normal"
+            android:text="@string/homefragment_login"
+            android:textColor="@color/layout_title_bg"
+            android:textSize="@dimen/font_size_17sp" />
+
+        <Button
+            android:id="@+id/homefragment_register_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/margin_size_80dp"
+            android:layout_height="@dimen/margin_size_35dp"
+            android:layout_alignBaseline="@+id/homefragment_login_btn"
+            android:layout_alignBottom="@+id/homefragment_login_btn"
+            android:layout_toLeftOf="@+id/homefragment_login_btn"
+            android:background="@drawable/btn_title_frame"
+            android:bufferType="normal"
+            android:text="@string/homefragment_register"
+            android:textColor="@color/layout_title_bg"
+            android:textSize="@dimen/font_size_17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homefragment_myinformation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/homefragment_userBalance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:bufferType="normal" />
+
+        <TextView
+            android:id="@+id/homefragment_userName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homefragment_userBalance_tv"
+            android:bufferType="normal"
+            android:textColor="#44b598" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_0.1dp"
+        android:background="@color/gray" />
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/frament_home_head.xml -->

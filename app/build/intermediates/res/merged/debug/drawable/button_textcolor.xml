@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:color="@color/white"/>
+    <item android:state_checkable="true" android:color="@color/white"/>
+    <item android:state_checked="true" android:color="@color/white"/>
+    <item android:state_enabled="false" android:color="@color/unChecked"/>
+    <item android:state_checkable="false" android:color="@color/unChecked"/>
+    <item android:state_checked="false" android:color="@color/unChecked"/>
+
+</selector><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/drawable/button_textcolor.xml -->

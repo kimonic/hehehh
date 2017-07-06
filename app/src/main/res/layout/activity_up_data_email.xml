@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical"
+    tools:context=".UpdateEmailActivity" >
+
+    <include
+        android:id="@+id/emailactivationcomplete_title_layout"
+        layout="@layout/activity_titlelayout" />
+
+    <LinearLayout
+        android:id="@+id/emailactivationcomplete_success_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/investment_fragment_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/updataemailcctivity_code_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center_vertical|left"
+                android:hint="@string/activity_update_email_new_email"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/updataemailcctivity_code_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/phoneregisteredactivity_obtain_verification_code"
+                android:textColor="@color/layout_title_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/registeractivity_phoneregister_tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="#dddddd" />
+
+        <EditText
+            android:id="@+id/updataemailcctivity_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="@string/phoneregisteredactivity_verification_code"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical|left"
+        android:text="请点击《获取验证码》我们将发送一封验证码邮件到您的邮箱"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/updataemailcctivity_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_bg"
+        android:text="下一步"
+        android:textColor="@drawable/button_textcolor"
+        android:textSize="16sp" />
+
+</LinearLayout>

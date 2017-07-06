@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="repay_type" translatable="false">
+        <item>等额本息</item>
+        <item>按季还款</item>
+        <item>到期还本息</item>
+        <item>按月付息</item>
+        <item>按天计息到期还本息</item>
+        <item>先息后本</item>
+    </string-array>
+    <string-array name="category_id" translatable="false">
+        <item>信用标</item>
+        <item>净值标</item>
+        <item>天标</item>
+        <item>担保标</item>
+        <item>抵押标</item>
+        <item>秒标</item>
+        <item>流转标</item>
+    </string-array>
+    <string-array name="status" translatable="false">
+        <item>初审失败</item>
+        <item>借款到期未满标（过期）</item>
+        <item>复审失败不合格标</item>
+        <item>用户撤标（流标）</item>
+        <item>过期后台撤标（流标）</item>
+        <item>未过期后台撤标（流标）</item>
+        <item>锁定中</item>
+        <item>复审失败 后台处理中</item>
+        <item>后台撤标 后台处理中</item>
+        <item>发标待审</item>
+        <item>初审通过,自动投标中</item>
+        <item>借款中</item>
+        <item>满标待审</item>
+        <item>复审后台处理中(队列复审处理中)未使用队列可以直接跳过</item>
+        <item>复审通过</item>
+        <item>已还完</item>
+    </string-array>
+
+</resources>

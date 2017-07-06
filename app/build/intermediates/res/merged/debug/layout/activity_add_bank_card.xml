@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_title_bar" />
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/common_gray_small_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankcard_manager_bind_self_card"
+            android:textColor="@color/huise" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/investment_fragment_item_bg"
+        android:gravity="center_vertical" 
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_add_bank_person_name"
+            style="@style/common_black_mid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/bankcard_manager_name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/bankcard_manager_realname_pass"
+            android:textColor="@color/lanse" />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView33"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/bankcard_manager_bank_num" 
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_add_bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/textView33"
+                android:hint="@string/bankcard_manager_input_bank_num"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical|right"
+                android:inputType="number" />
+
+         
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_add_bank_select_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/bankcard_manager_select_open_bank"/>
+            <TextView
+                android:id="@+id/tv_add_bank_type"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_right1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            
+
+            <ImageView
+                android:id="@+id/iv_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal_center_right" />
+
+        </RelativeLayout>
+        
+		<RelativeLayout
+		    android:id="@+id/rl_add_bank_select_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/bankcard_manager_select_bank_city" 
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_add_bank_province"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/common_black_mid_textView"
+                android:background="@color/white"
+                android:layout_toLeftOf="@+id/tv_add_bank_city"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_add_bank_city"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toLeftOf="@+id/iv_right3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center" />
+            
+
+            <ImageView
+                android:id="@+id/iv_right3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personal_center_right" />
+
+        </RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/investment_fragment_item_bg"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_add_bank_name"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/bankcard_manager_select_bank_name" 
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/tv_add_bank_kh_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/tv_add_bank_name"
+                android:hint="@string/bankcard_manager_input_bank_name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical|right"  />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_add_bank_submit"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/margin_size_10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/addbankcardactivity_submit" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_add_bank_card.xml -->

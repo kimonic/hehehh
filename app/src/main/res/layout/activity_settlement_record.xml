@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SettlementRecordActivity" >
+    
+    <include layout="@layout/layout_common_title_bar"/>
+<com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@color/layout_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/settlement_record_money"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/settlement_record_time" 
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/settlement_record_status" 
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_settlement_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"        
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" >
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

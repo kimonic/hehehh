@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/trade_actionbar"
+        layout="@layout/investmentdetailsactivity_titlelayout" />
+
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/trade_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.diyou.view.LoadingLayout>
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/trade_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true">
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_recharge_record.xml -->

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/projectrepaymentaplanctivity_titlelayout"
+        layout="@layout/activity_titlelayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_size_10dp"
+        android:paddingTop="@dimen/margin_size_10dp" >
+
+        <TextView
+            android:id="@+id/item_projectrepaymentaplanctivity_repayment_period"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/projectrepaymentaplanctivity_repayment_period"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <TextView
+            android:id="@+id/item_projectrepaymentaplanctivity_plan_repayment_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/projectrepaymentaplanctivity_plan_repayment_time"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <TextView
+            android:id="@+id/item_projectrepaymentaplanctivity_repayment_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/projectrepaymentaplanctivity_repayment_money"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <TextView
+            android:id="@+id/item_projectrepaymentaplanctivity_actual_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/projectrepaymentaplanctivity_actual_money"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <TextView
+            android:id="@+id/projectrepaymentaplanctivity_actual_interest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/projectrepaymentaplanctivity_actual_interest"
+            android:textColor="@color/dimgray"
+            android:textSize="@dimen/font_size_12sp" />
+    </LinearLayout>
+
+    <com.diyou.pull2refresh.ChiPullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/projectrepaymentaplanctivity_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#00000000"
+        android:listSelector="@drawable/listview_selector"
+        android:overScrollMode="never" >
+    </com.diyou.pull2refresh.ChiPullToRefreshListView>
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_project_repayment_plan.xml -->

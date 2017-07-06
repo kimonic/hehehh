@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diyou.javahf.shcf"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="junnet.permission.DEVICE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- <uses-permission android:name="getui.permission.GetuiService.第三方包名" /> -->
+    <uses-permission android:name="getui.permission.GetuiService.com.diyou.javahf.shcf" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.diyou.javahf.shcf"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name="com.diyou.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/v5_logo"
+        android:label="土豆金服"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        <meta-data
+            android:name="sak"
+            android:value=";3jm$>/p-ED^cVz_j~.KV&amp;V)k9jn,UAH" />
+        <meta-data
+            android:name="ssk"
+            android:value="DY34fdgsWET@#$%wg#@4fgd345sg" />
+        <meta-data
+            android:name="rak"
+            android:value="54Ms5bkE6UEdyrRviJ0![OR]g+i79x]k" />
+        <meta-data
+            android:name="rsk"
+            android:value="DYklj45T78ET@asd23" />
+        <meta-data
+            android:name="url"
+            android:value="http://dev-m.shcf.diyou.cc" />
+        <!--
+       <meta-data
+       android:name="url"
+       android:value="http://dev-www.7djr.diyou.cc" />
+        -->
+
+
+        <!-- http://192.168.40.137:8080 -->
+        <!-- http://javadev.phone.diyou.cc:8080 -->
+        <!-- http://obama.wicp.net -->
+        <activity
+            android:name="com.diyou.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.diyou.activity.InvestmentDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_investment_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.CreditorRightsDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_creditor_rights_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.TheTenderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_the_tender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.MoneyManagementActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_money_management"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.BeforeRegisteredActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_phone_registered"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.RegisteredActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_phone_registered"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.BeforeLoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.DetaileProblemActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.RetrievePasswordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.ResetLoginPasswordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.AddBankCardActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.HasCastProjectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_has_cast_project"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.ProjectRepaymentPlanActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_project_repayment_plan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.CreditorRightsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.TransactionDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_transaction_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.AdvertisingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.huifu.HuifuAuthenticationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.huifu.HuifuBindBankCardActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_huifu_bind_bank_card"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.AccountSecurityActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_account_security"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.UpdateEmailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.huifu.HuiFuPayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_hui_fu_pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.ExitLoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_exit_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.UpdateLoginPasswordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_update_login_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.NoticeListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_update_login_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.RegisterSuccessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_register_success"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.LoanAgreementActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_register_success"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.diyou.huifu.HuiFuCashActivity" />
+        <activity android:name="com.diyou.activity.TestActivity" />
+        <activity
+            android:name="com.diyou.activity.FundsDetailActivity"
+            android:label="@string/title_activity_funds_detail" />
+        <activity
+            android:name="com.diyou.activity.PhoneBindActivity"
+            android:label="@string/title_activity_bind_phone" />
+        <activity
+            android:name="com.diyou.activity.PhoneCodeActivity"
+            android:label="@string/title_activity_phone_code" />
+        <activity
+            android:name="com.diyou.activity.RealNameAuthActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_real_name_auth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.BidActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.diyou.activity.BuyCreditorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.diyou.activity.AccountDetailActivity" />
+        <activity
+            android:name="com.diyou.activity.SettingActivity"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name="com.diyou.activity.SettingPaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.diyou.activity.UserInfoActivity"
+            android:label="@string/title_activity_user_info" />
+        <activity
+            android:name="com.diyou.activity.MyInvestmentDetailActivity"
+            android:label="@string/title_activity_my_investment_detail" />
+
+        <!-- 入口activity -->
+        <activity
+            android:name="com.diyou.activity.WelcomeActivity"
+            android:label="土豆金服"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diyou.activity.GuidePageActivity"
+            android:label="@string/title_activity_guide_page"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.diyou.activity.LockSetupActivity"
+            android:label="@string/title_activity_lock_setup"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.diyou.activity.LockActivity"
+            android:label="@string/title_activity_lock" />
+        <activity
+            android:name="com.diyou.activity.PhoneChangeActivity"
+            android:label="@string/title_activity_phone_change" />
+        <activity
+            android:name="com.diyou.activity.CheckOldPhoneActivity"
+            android:label="@string/title_activity_check_old_phone" />
+        <activity
+            android:name="com.diyou.activity.UpdatePaymentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.TradeRecordDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.InsideLetterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.TradeRecordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.RechargeRecordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.InsideLetterDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.MyProjectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.EmailCodeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diyou.activity.EmailBindActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.diyou.activity.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="cSGNVeNZXB6UesyrmhQb55" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="Ifn4uHjn2TAnmcxZlT3wR9" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="puKtQJce3U9JTgFP7DsmD" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+
+        <service
+            android:name="com.diyou.pushservice.MyService"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.diyou.pushservice.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.cSGNVeNZXB6UesyrmhQb55" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.diyou.javahf.shcf"
+            android:process=":pushservice" />
+        <!-- android:authorities="downloads.第三方包名" -->
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.cSGNVeNZXB6UesyrmhQb55" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <!-- 个推SDK配置结束 -->
+
+        <activity
+            android:name="com.diyou.activity.CheckNewPhoneActivity"
+            android:label="@string/title_activity_check_new_phone" />
+        <activity
+            android:name="com.diyou.activity.RealNameInfoActivity"
+            android:label="@string/title_activity_real_name_info" />
+        <activity android:name="com.diyou.activity.EmailChangeActivity" />
+        <activity android:name="com.diyou.activity.CheckNewEmailActivity" />
+        <activity android:name="com.diyou.activity.CheckOldEmailActivity" />
+        <activity android:name="com.diyou.activity.BankCardManagerActivity" />
+        <activity android:name="com.diyou.activity.AreaListActivity" />
+        <activity android:name="com.diyou.activity.ChangeBankCardActivity" />
+        <activity android:name="com.diyou.activity.WithdrawActivity" />
+        <activity android:name="com.diyou.activity.BankListActivity" />
+        <activity android:name="com.diyou.activity.WithdrawRecordActivity" />
+        <activity android:name="com.diyou.activity.MyPromotionActivity" />
+        <activity android:name="com.diyou.activity.SettlementRecordActivity" />
+        <activity android:name="com.diyou.activity.PromotionRecordActivity" />
+        <activity
+            android:name="com.diyou.activity.RechargeActivity"
+            android:label="@string/title_activity_recharge" />
+        <activity
+            android:name="com.diyou.activity.RechargeRecordDetailActivity"
+            android:label="@string/title_activity_recharge" />
+        <activity
+            android:name="com.diyou.activity.YiBaoRegisterActivity"
+            android:label="@string/title_activity_yi_bao_register" />
+        <activity android:name="com.diyou.activity.YiBaoRechargeActivity" />
+        <activity android:name="com.diyou.activity.YiBaoWithdrawActivity" />
+        <activity android:name="com.diyou.activity.YiBaoBindBankCardActivity" />
+        <activity android:name="com.diyou.activity.YiBaoUnbindBankCardActivity" />
+        <activity android:name="com.diyou.activity.YiBaoInvestActivity" />
+        <activity android:name="com.diyou.activity.YiBaoBuyActivity" />
+        <activity
+            android:name="com.diyou.activity.MyPayAccountActivity"
+            android:label="@string/title_activity_my_pay_account" />
+        <activity android:name="com.diyou.activity.MyCreditorBuyDetailsActivity" />
+        <activity
+            android:name="com.diyou.activity.MyCreditorTransferDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.diyou.activity.IAgreementActivity" />
+        <activity android:name="com.diyou.activity.CAgreementActivity" />
+        <activity android:name="com.diyou.activity.FlowBidActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,973 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:2:1-479:12
+	package
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:8:22-72
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:9:22-72
+uses-permission#android.permission.CAMERA
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:10:5-65
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:10:22-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#junnet.permission.DEVICE_STATE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:12:22-67
+uses-permission#android.permission.CALL_PHONE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:13:5-69
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:13:22-66
+uses-permission#android.permission.GET_TASKS
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:14:22-65
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:15:22-73
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:16:5-74
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:16:22-71
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:17:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:19:22-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:21:22-63
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:23:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:24:5-74
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:24:22-71
+uses-permission#getui.permission.GetuiService.${applicationId}
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:27:5-86
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:27:22-83
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+permission#getui.permission.GetuiService.${applicationId}
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:29:5-31:55
+	android:protectionLevel
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:31:9-41
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:30:9-70
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+application
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:33:5-477:19
+MERGED from [com.android.support:support-v4:23.0.1] E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:37:9-36
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	android:allowBackup
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:35:9-35
+	android:icon
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:36:9-41
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:38:9-68
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:34:9-59
+meta-data#sak
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:40:9-42:68
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:42:13-65
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:41:13-31
+meta-data#ssk
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:43:9-45:60
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:45:13-57
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:44:13-31
+meta-data#rak
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:46:9-48:64
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:48:13-61
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:47:13-31
+meta-data#rsk
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:49:9-51:50
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:51:13-47
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:50:13-31
+meta-data#url
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:52:9-54:42
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:54:13-39
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:53:13-31
+activity#com.diyou.activity.MainActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:62:9-67:72
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:66:13-49
+	android:launchMode
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:65:13-44
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:64:13-63
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:67:13-60
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:63:13-59
+activity#com.diyou.activity.InvestmentDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:68:9-72:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:72:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:71:13-70
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:70:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:69:13-72
+activity#com.diyou.activity.CreditorRightsDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:73:9-77:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:77:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:76:13-75
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:75:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:74:13-76
+activity#com.diyou.activity.TheTenderActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:78:9-82:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:82:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:81:13-62
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:80:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:79:13-64
+activity#com.diyou.activity.MoneyManagementActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:83:9-87:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:87:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:86:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:85:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:84:13-70
+activity#com.diyou.activity.BeforeRegisteredActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:88:9-92:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:92:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:91:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:90:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:89:13-71
+activity#com.diyou.activity.RegisteredActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:93:9-97:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:97:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:96:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:95:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:94:13-65
+activity#com.diyou.activity.BeforeLoginActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:98:9-102:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:102:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:101:13-57
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:100:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:99:13-66
+activity#com.diyou.activity.LoginActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:103:9-107:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:107:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:106:13-57
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:105:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:104:13-60
+activity#com.diyou.activity.DetaileProblemActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:108:9-112:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:112:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:111:13-57
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:110:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:109:13-69
+activity#com.diyou.activity.RetrievePasswordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:113:9-117:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:117:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:116:13-57
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:115:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:114:13-71
+activity#com.diyou.activity.ResetLoginPasswordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:118:9-122:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:122:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:121:13-57
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:120:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:119:13-73
+activity#com.diyou.activity.AddBankCardActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:123:9-126:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:126:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:125:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:124:13-66
+activity#com.diyou.activity.HasCastProjectActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:127:9-131:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:131:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:130:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:129:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:128:13-69
+activity#com.diyou.activity.ProjectRepaymentPlanActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:132:9-136:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:136:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:135:13-74
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:134:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:133:13-75
+activity#com.diyou.activity.CreditorRightsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:137:9-140:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:140:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:139:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:138:13-69
+activity#com.diyou.activity.TransactionDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:141:9-145:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:145:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:144:13-71
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:143:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:142:13-73
+activity#com.diyou.activity.AdvertisingActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:146:9-149:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:149:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:148:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:147:13-66
+activity#com.diyou.huifu.HuifuAuthenticationActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:150:9-153:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:153:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:152:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:151:13-71
+activity#com.diyou.huifu.HuifuBindBankCardActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:154:9-158:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:158:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:157:13-72
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:156:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:155:13-69
+activity#com.diyou.activity.AccountSecurityActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:159:9-163:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:163:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:162:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:161:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:160:13-70
+activity#com.diyou.activity.UpdateEmailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:164:9-167:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:167:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:166:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:165:13-66
+activity#com.diyou.huifu.HuiFuPayActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:168:9-172:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:172:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:171:13-62
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:170:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:169:13-60
+activity#com.diyou.activity.ExitLoginActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:173:9-177:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:177:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:176:13-62
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:175:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:174:13-64
+activity#com.diyou.activity.UpdateLoginPasswordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:178:9-182:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:182:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:181:13-73
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:180:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:179:13-74
+activity#com.diyou.activity.NoticeListActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:183:9-187:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:187:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:186:13-73
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:185:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:184:13-65
+activity#com.diyou.activity.RegisterSuccessActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:188:9-192:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:192:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:191:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:190:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:189:13-70
+activity#com.diyou.activity.LoanAgreementActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:193:9-197:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:197:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:196:13-68
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:195:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:194:13-68
+activity#com.diyou.huifu.HuiFuCashActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:198:9-79
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:198:19-67
+activity#com.diyou.activity.TestActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:200:9-77
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:200:19-65
+activity#com.diyou.activity.FundsDetailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:201:9-203:76
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:203:13-64
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:202:13-66
+activity#com.diyou.activity.PhoneBindActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:204:9-206:74
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:206:13-62
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:205:13-64
+activity#com.diyou.activity.PhoneCodeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:207:9-209:74
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:209:13-62
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:208:13-64
+activity#com.diyou.activity.RealNameAuthActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:210:9-214:61
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:214:13-49
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:212:13-66
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:213:13-74
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:211:13-67
+activity#com.diyou.activity.BidActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:215:9-218:70
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:217:13-49
+	android:windowSoftInputMode
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:218:13-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:216:13-58
+activity#com.diyou.activity.BuyCreditorActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:219:9-221:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:221:13-49
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:220:13-66
+activity#com.diyou.activity.AccountDetailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:222:9-86
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:222:19-74
+activity#com.diyou.activity.SettingActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:223:9-225:71
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:225:13-59
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:224:13-62
+activity#com.diyou.activity.SettingPaymentActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:226:9-229:70
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:228:13-49
+	android:windowSoftInputMode
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:229:13-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:227:13-69
+activity#com.diyou.activity.UserInfoActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:230:9-232:73
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:232:13-61
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:231:13-63
+activity#com.diyou.activity.MyInvestmentDetailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:233:9-235:84
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:235:13-72
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:234:13-73
+activity#com.diyou.activity.WelcomeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:238:9-247:20
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:240:13-40
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:241:13-60
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:239:13-62
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:242:13-246:29
+action#android.intent.action.MAIN
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:243:17-69
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:243:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:245:17-77
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:245:27-74
+activity#com.diyou.activity.GuidePageActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:248:9-251:72
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:250:13-62
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:251:13-60
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:249:13-64
+activity#com.diyou.activity.LockSetupActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:253:9-256:72
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:255:13-62
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:256:13-60
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:254:13-64
+activity#com.diyou.activity.LockActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:257:9-259:68
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:259:13-56
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:258:13-59
+activity#com.diyou.activity.PhoneChangeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:260:9-262:76
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:262:13-64
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:261:13-66
+activity#com.diyou.activity.CheckOldPhoneActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:263:9-265:79
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:265:13-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:264:13-68
+activity#com.diyou.activity.UpdatePaymentActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:266:9-269:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:269:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:268:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:267:13-68
+activity#com.diyou.activity.TradeRecordDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:270:9-273:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:273:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:272:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:271:13-73
+activity#com.diyou.activity.InsideLetterActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:274:9-277:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:277:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:276:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:275:13-67
+activity#com.diyou.activity.TradeRecordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:278:9-281:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:281:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:280:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:279:13-66
+activity#com.diyou.activity.RechargeRecordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:282:9-285:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:285:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:284:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:283:13-69
+activity#com.diyou.activity.InsideLetterDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:286:9-289:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:289:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:288:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:287:13-74
+activity#com.diyou.activity.MyProjectActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:290:9-293:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:293:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:292:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:291:13-64
+activity#com.diyou.activity.EmailCodeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:294:9-297:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:297:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:296:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:295:13-64
+activity#com.diyou.activity.EmailBindActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:298:9-301:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:301:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:300:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:299:13-64
+activity#com.mob.tools.MobUIShell
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:302:9-316:20
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:305:13-49
+	android:windowSoftInputMode
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:307:13-67
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:304:13-74
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:306:13-72
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:303:13-52
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:308:13-315:29
+data
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:309:17-59
+	android:scheme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:309:23-56
+action#android.intent.action.VIEW
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:311:17-69
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:311:25-66
+category#android.intent.category.BROWSABLE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:313:17-78
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:313:27-75
+category#android.intent.category.DEFAULT
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:314:17-76
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:314:27-73
+activity#com.diyou.activity.WXEntryActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:318:9-323:75
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:322:13-49
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:321:13-36
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:320:13-74
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:323:13-72
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:319:13-62
+meta-data#PUSH_APPID
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:328:9-330:54
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:330:13-51
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:329:13-38
+meta-data#PUSH_APPKEY
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:331:9-333:54
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:333:13-51
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:332:13-39
+meta-data#PUSH_APPSECRET
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:334:9-336:53
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:336:13-50
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:335:13-42
+meta-data#PUSH_GROUPID
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:337:9-339:32
+	android:value
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:339:13-29
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:338:13-40
+service#com.diyou.pushservice.MyService
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:341:9-344:49
+	android:enabled
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:343:13-35
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:344:13-38
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:342:13-59
+receiver#com.diyou.pushservice.PushReceiver
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:347:9-353:20
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:349:13-37
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:348:13-62
+intent-filter#com.igexin.sdk.action.cSGNVeNZXB6UesyrmhQb55
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:350:13-352:29
+action#com.igexin.sdk.action.cSGNVeNZXB6UesyrmhQb55
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:351:17-87
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:351:25-84
+service#com.igexin.sdk.PushService
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:356:9-360:54
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:360:13-43
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:359:13-47
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:358:13-36
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:357:13-54
+receiver#com.igexin.sdk.PushReceiver
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:362:9-373:20
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:362:19-61
+intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.igexin.sdk.action.refreshls
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:363:13-372:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:364:17-79
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:364:25-76
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:365:17-79
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:365:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:366:17-77
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:366:25-74
+action#com.igexin.sdk.action.refreshls
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:367:17-74
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:367:25-71
+action#android.intent.action.MEDIA_MOUNTED
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:369:17-78
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:369:25-75
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:370:17-87
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:370:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:371:17-90
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:371:25-87
+receiver#com.igexin.sdk.PushManagerReceiver
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:374:9-380:20
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:376:13-37
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:375:13-62
+intent-filter#com.igexin.sdk.action.pushmanager
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:377:13-379:29
+action#com.igexin.sdk.action.pushmanager
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:378:17-76
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:378:25-73
+activity#com.igexin.sdk.PushActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:382:9-388:84
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:386:13-43
+	android:excludeFromRecents
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:384:13-46
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:385:13-37
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:388:13-72
+	android:taskAffinity
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:387:13-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:383:13-55
+service#com.igexin.download.DownloadService
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:390:9-392:46
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:392:13-43
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:391:13-63
+receiver#com.igexin.download.DownloadReceiver
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:394:9-398:20
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:394:19-70
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:395:13-397:29
+provider#com.igexin.download.DownloadProvider
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:400:9-403:46
+	android:authorities
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:402:13-61
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:403:13-43
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:401:13-64
+activity#com.igexin.getuiext.activity.GetuiExtActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:406:9-413:75
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:411:13-43
+	android:excludeFromRecents
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:409:13-46
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:410:13-37
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:408:13-72
+	android:theme
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:413:13-72
+	android:taskAffinity
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:412:13-62
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:407:13-73
+receiver#com.igexin.getuiext.service.PayloadReceiver
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:415:9-425:20
+	android:exported
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:417:13-37
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:416:13-71
+intent-filter#com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4+com.igexin.sdk.action.cSGNVeNZXB6UesyrmhQb55
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:418:13-424:29
+action#com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:421:17-87
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:421:25-84
+service#com.igexin.getuiext.service.GetuiExtService
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:427:9-429:46
+	android:process
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:429:13-43
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:428:13-71
+activity#com.diyou.activity.CheckNewPhoneActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:433:9-435:79
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:435:13-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:434:13-68
+activity#com.diyou.activity.RealNameInfoActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:436:9-438:78
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:438:13-66
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:437:13-67
+activity#com.diyou.activity.EmailChangeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:439:9-84
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:439:19-72
+activity#com.diyou.activity.CheckNewEmailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:440:9-86
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:440:19-74
+activity#com.diyou.activity.CheckOldEmailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:441:9-86
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:441:19-74
+activity#com.diyou.activity.BankCardManagerActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:442:9-88
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:442:19-76
+activity#com.diyou.activity.AreaListActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:443:9-81
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:443:19-69
+activity#com.diyou.activity.ChangeBankCardActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:444:9-87
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:444:19-75
+activity#com.diyou.activity.WithdrawActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:445:9-81
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:445:19-69
+activity#com.diyou.activity.BankListActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:446:9-81
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:446:19-69
+activity#com.diyou.activity.WithdrawRecordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:447:9-87
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:447:19-75
+activity#com.diyou.activity.MyPromotionActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:448:9-84
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:448:19-72
+activity#com.diyou.activity.SettlementRecordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:449:9-89
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:449:19-77
+activity#com.diyou.activity.PromotionRecordActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:450:9-88
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:450:19-76
+activity#com.diyou.activity.RechargeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:451:9-453:72
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:453:13-60
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:452:13-63
+activity#com.diyou.activity.RechargeRecordDetailActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:454:9-456:72
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:456:13-60
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:455:13-75
+activity#com.diyou.activity.YiBaoRegisterActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:457:9-459:79
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:459:13-67
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:458:13-68
+activity#com.diyou.activity.YiBaoRechargeActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:460:9-86
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:460:19-74
+activity#com.diyou.activity.YiBaoWithdrawActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:461:9-86
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:461:19-74
+activity#com.diyou.activity.YiBaoBindBankCardActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:462:9-90
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:462:19-78
+activity#com.diyou.activity.YiBaoUnbindBankCardActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:463:9-92
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:463:19-80
+activity#com.diyou.activity.YiBaoInvestActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:464:9-84
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:464:19-72
+activity#com.diyou.activity.YiBaoBuyActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:465:9-81
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:465:19-69
+activity#com.diyou.activity.MyPayAccountActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:466:9-468:78
+	android:label
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:468:13-66
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:467:13-67
+activity#com.diyou.activity.MyCreditorBuyDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:469:9-93
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:469:19-81
+activity#com.diyou.activity.MyCreditorTransferDetailsActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:470:9-473:52
+	android:screenOrientation
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:473:13-49
+	android:configChanges
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:472:13-63
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:471:13-80
+activity#com.diyou.activity.IAgreementActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:474:9-83
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:474:19-71
+activity#com.diyou.activity.CAgreementActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:475:9-83
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:475:19-71
+activity#com.diyou.activity.FlowBidActivity
+ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:476:9-80
+	android:name
+		ADDED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml:476:19-68
+uses-sdk
+INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v4:23.0.1] E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml
+		INJECTED from E:\work\demo\Android_SanHeCaiFu\JAVA_HF_SanHeCaiFu_V5\app\src\main\AndroidManifest.xml

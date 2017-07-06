@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/activity_investment_title"
+        layout="@layout/activity_investment_title" />
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/IAgreementActivity_loadinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.diyou.view.LoadingLayout>
+
+    <WebView
+        android:id="@+id/IAgreementActivity_webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</LinearLayout>

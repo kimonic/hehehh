@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateHidden|adjustPan" >
+
+    <include
+        android:id="@+id/bid_title_bar"
+        layout="@layout/investmentdetailsactivity_titlelayout" />
+
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/bid_loadlayout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+
+    <ScrollView
+        android:id="@+id/layout_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/Loan_target_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_18sp"
+                        android:singleLine="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bid_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/rate_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/interest_rate" />
+
+                        <TextView
+                            android:id="@+id/bid_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/margin_size_2dp"
+                            android:layout_toRightOf="@+id/rate_imageView"
+                            android:paddingLeft="@dimen/margin_size_3dp"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/font_size_16sp"
+                            tools:text="0.0%"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bid_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/rate_imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/interest_rate" />
+
+                    <TextView
+                        android:id="@+id/bid_rate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_2dp"
+                        android:paddingLeft="@dimen/margin_size_3dp"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_16sp"
+                        tools:text="0.0%"/>
+
+                    <TextView
+                        android:id="@+id/bid_rate_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/light_red"
+                        android:textSize="@dimen/font_size_16sp"
+                        tools:text="0.0%"/>
+
+                    <ImageView
+                        android:id="@+id/award_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_2dp"
+                        android:src="@drawable/bid_award"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/bid_rate_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/chengse"
+                        android:textSize="@dimen/font_size_16sp"
+                        tools:text="0.0%"/>
+
+                    <ImageView
+                        android:id="@+id/new_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_2dp"
+                        android:src="@drawable/bid_new"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/prosecution_amount_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/prosecution_amount"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/prosecution_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/prosecution_amount_textView"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/repayment_method_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/repayment_method"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/repayment_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/repayment_method_textView"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/Investment_ceiling_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/investment_ceiling"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/investment_ceiling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/Investment_ceiling_textView"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/loan_term_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/loan_term"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/loan_term"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/loan_term_textView"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_size_50dp"
+                android:layout_marginTop="@dimen/margin_size_10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/investment_amount_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_size_10dp"
+                    android:text="@string/investment_amount"
+                    android:textColor="@color/light_gray" />
+
+                <EditText
+                    android:id="@+id/investment_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/investment_amount_textView"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/font_size_18sp"
+                    android:hint="请输入金额"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_investment_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_size_50dp"
+                android:layout_marginTop="@dimen/margin_size_10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_size_10dp"
+                    android:text="@string/investment_password"
+                    android:textColor="@color/light_gray" />
+
+                <EditText
+                    android:id="@+id/et_investment_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:background="@null"
+                    android:maxLength="9"
+                    android:inputType="textPassword"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/font_size_18sp"
+                    android:hint="请输入密码"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <TextView
+                    android:id="@+id/amount_of_investment_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/amount_of_investment"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/amount_of_investment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/amount_of_investment_textView"
+                    android:textColor="@color/light_blue" />
+
+                <TextView
+                    android:id="@+id/account_balance_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount_of_investment_textView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/account_balance"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/account_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount_of_investment"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/account_balance_textView"
+                    android:textColor="@color/light_red" />
+
+                <TextView
+                    android:id="@+id/recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:text="@string/recharge"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/font_size_18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_size_50dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/expected_revenue_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_size_10dp"
+                    android:text="@string/expected_revenue"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/expected_revenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/expected_revenue_textView"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/font_size_18sp"/>
+                <TextView
+                    android:id="@+id/expected_revenue_award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/expected_revenue"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp" >
+
+                <TextView
+                    android:id="@+id/income_includes_interest_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/income_includes_interest"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/income_includes_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/income_includes_interest_textView"
+                    android:textColor="@color/dark_gray" />
+                <TextView
+                    android:id="@+id/income_includes_interest_award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/income_includes_interest"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/earnings_include_rewards_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/income_includes_interest_textView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/earnings_include_rewards"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/earnings_include_rewards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/income_includes_interest"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/earnings_include_rewards_textView"
+                    android:textColor="@color/dark_gray" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bid_investment_buttton"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/investment_bid"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

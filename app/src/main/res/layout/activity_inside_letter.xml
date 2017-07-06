@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/inside_actionbar"
+        layout="@layout/investmentdetailsactivity_titlelayout" />
+
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/inside_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+
+    <com.diyou.pulltorefresh.PullToRefreshListView
+        android:id="@+id/inside_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </com.diyou.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

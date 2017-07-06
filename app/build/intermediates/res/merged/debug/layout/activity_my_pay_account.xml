@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical"
+    tools:context="com.diyou.activity.MyPayAccountActivity" >
+
+    <include 
+        layout="@layout/layout_common_title_bar" />
+	<com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/common_dark_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="托管类型"
+                android:ems="4"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_type_logo"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@null" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/common_dark_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="托管号"
+                android:ems="4"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_my_pay_account"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DY00001" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/common_dark_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总金额"
+                android:ems="4"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_my_pay_all_money"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_display_money_default" />
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_display_yuan_default" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/common_dark_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用金额"
+                android:ems="4"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_my_pay_can_money"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_display_money_default" />
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_display_yuan_default" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/common_dark_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="冻结金额"
+                android:ems="4"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_my_pay_frost_money"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_display_money_default" />
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_display_yuan_default" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="二次授权"
+        android:enabled="false"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_my_pay_account.xml -->

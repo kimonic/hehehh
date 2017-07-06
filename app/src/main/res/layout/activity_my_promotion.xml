@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPromotionActivity"
+    android:background="@color/layout_bg" >
+<include layout="@layout/layout_common_title_bar" android:id="@+id/include1"/>
+    
+     <com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_below="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+   
+<com.diyou.pulltorefresh.PullToRefreshScrollView 
+    android:id="@+id/sv_my_promotion" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:layout_below="@+id/include1" 
+    android:layout_centerHorizontal="true">
+<!-- <ScrollView 
+    android:id="@+id/sv_my_promotion" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:layout_below="@+id/include1" 
+    android:layout_centerHorizontal="true"> -->
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/common_gray_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/my_promotion_person_num" />
+
+                <TextView
+                    android:id="@+id/tv_promotion_person_num"
+                    style="@style/common_black_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/common_display_money_default" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/common_gray_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/textView1"
+                    android:text="@string/my_promotion_invest_money" />
+
+                <TextView
+                    android:id="@+id/tv_promotion_invest_money"
+                    style="@style/common_black_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView3"
+					android:layout_toRightOf="@+id/textView3"
+					android:layout_marginLeft="8dp"
+                    android:text="@string/common_display_money_default" />
+
+            </RelativeLayout>
+           <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/common_gray_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/my_promotion_invest_sum" />
+
+                <TextView
+                    android:id="@+id/tv_promotion_invest_sum"
+                    style="@style/common_black_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/common_display_money_default" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/common_gray_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_below="@+id/textView5"
+                    android:text="@string/my_promotion_borrow_refund" />
+
+                <TextView
+                    android:id="@+id/tv_promotion_borrow_refund"
+                    style="@style/common_black_small_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView7"
+					android:layout_toRightOf="@+id/textView7"
+					android:layout_marginLeft="8dp"
+                    android:text="@string/common_display_money_default" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_promotion_record"
+                style="@style/common_black_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/my_promotion_record" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_promotion_record"
+                android:text="@string/my_promotion_look" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_promotion_residue_money" />
+
+            <TextView
+                android:id="@+id/tv_promotion_residue_money"
+                style="@style/common_black_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/common_display_money_default" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/my_promotion_clear_one_time" />
+
+            <TextView
+                android:id="@+id/tv_promotion_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView13"
+                android:text="@string/my_promotion_ten_yuan" 
+                android:textSize="14sp"
+                android:textColor="@color/chengse"/>
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_promotion_limit"
+                android:text="@string/my_promotion_full" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_promotion_settle_now"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/my_promotion_clear_now"
+            android:enabled="false" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_promotion_clearing" />
+
+            <TextView
+                android:id="@+id/tv_promotion_clearing"
+                style="@style/common_black_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/common_display_money_default" />
+
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_promotion_settlement_record"
+                style="@style/common_black_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/my_promotion_clear_record" />
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_promotion_settlement_record"
+                android:text="@string/my_promotion_look" />
+
+        </RelativeLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@drawable/investment_fragment_item_bg" >
+
+        <TextView
+            android:id="@+id/tv_settlement_item_money"
+            style="@style/common_gray_small_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/my_promotion_tab_user_name"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tv_settlement_item_time"
+            style="@style/common_gray_small_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/my_promotion_tab_invest_sum" 
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tv_settlement_item_status"
+            style="@style/common_gray_small_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/my_promotion_tab_refund_sum"
+            android:paddingLeft="8dp" />
+
+    </LinearLayout>
+        <com.diyou.view.ListViewForScrollView 
+            android:id="@+id/lv_my_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            
+            
+        </com.diyou.view.ListViewForScrollView>
+    </LinearLayout>
+<!-- </ScrollView> -->
+</com.diyou.pulltorefresh.PullToRefreshScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_bg"
+    tools:context=".PhoneBindActivity" >
+
+    <include
+        android:id="@+id/activity_update_phone_number_title_layout"
+        layout="@layout/layout_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/investment_fragment_item_bg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" 
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_phone_change_num"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp" >
+
+        </TextView>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_phone_change_submit"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:text="@string/phone_change_change"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/bid_title_bar"
+        layout="@layout/investmentdetailsactivity_titlelayout" />
+
+     <com.diyou.view.LoadingLayout
+        android:id="@+id/bid_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.diyou.view.LoadingLayout>
+
+    <ScrollView
+        android:id="@+id/layout_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/creditorrightsdetailsActivity_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_10dp"
+                        android:text="老家买房借款001"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/font_size_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_transfer_time_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/creditorrightsdetailsActivity_transfer_time"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_transfer_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/creditorrightsdetailsActivity_transfer_time_textView"
+                            android:text="10期/共12期"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_repayment_method_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/creditorrightsdetailsActivity_repayment_method"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_repayment_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/creditorrightsdetailsActivity_repayment_method_textView"
+                            android:text="等额本息"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_repayment_period_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/creditorrightsdetailsActivity_repayment_period"
+                            android:textColor="@color/light_gray" />
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_repayment_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2015年7月22号"
+                            android:textColor="@color/dark_gray"
+                            android:layout_toRightOf="@+id/creditorrightsdetailsActivity_repayment_period_textView"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_loan_term_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/creditorrightsdetailsActivity_loan_term"
+                            android:textColor="@color/light_gray" />
+
+                        <TextView
+                            android:id="@+id/creditorrightsdetailsActivity_loan_term"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/creditorrightsdetailsActivity_loan_term_textView"
+                            android:text="12个月"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_size_50dp"
+                android:layout_marginTop="@dimen/margin_size_10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/investment_amount_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_size_10dp"
+                    android:text="@string/creditorrightsdetailsActivity_transfer_price"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/creditorrightsdetailsActivity_amount_editView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/investment_amount_textView"
+                    android:background="@null"
+                    android:maxLength="9"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/font_size_18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <TextView
+                    android:id="@+id/account_balance_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/account_balance"
+                    android:textColor="@color/light_gray"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/account_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/account_balance_textView"
+                    android:text="@string/common_display_money_default"
+                    android:textColor="@color/light_red"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:text="@string/recharge"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/font_size_18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_size_50dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/expected_revenue_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_size_10dp"
+                    android:text="@string/expected_revenue"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/expected_revenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/expected_revenue_textView"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/font_size_18sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/creditorrightsdetailsActivity_submit"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/creditorrightsdetailsActivity_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

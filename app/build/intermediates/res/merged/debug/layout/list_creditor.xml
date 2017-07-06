@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2299FFCC"
+    android:orientation="vertical" >
+
+<!--         android:dividerHeight="10dp" -->
+
+    <com.diyou.pull2refresh.ChiPullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/creditor_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#00000000"
+        android:listSelector="@drawable/listview_selector"
+        android:overScrollMode="never" >
+
+    </com.diyou.pull2refresh.ChiPullToRefreshListView>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/list_creditor.xml -->

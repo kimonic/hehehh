@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tv_settlement_item_money"
+            style="@style/common_black_small_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/settlement_record_money" />
+
+        <TextView
+            android:id="@+id/tv_settlement_item_time"
+            style="@style/common_gray_small_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/settlement_record_time"  />
+
+        <TextView
+            android:id="@+id/tv_settlement_item_status"
+            style="@style/common_gray_small_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/settlement_record_status" />
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/item_settlement_record_lv.xml -->

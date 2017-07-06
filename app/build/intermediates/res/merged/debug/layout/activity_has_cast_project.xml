@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/hascastprojectactivity_titlelayout"
+        layout="@layout/activity_titlelayout" />
+
+    <com.diyou.view.PagerSlidingTabStrip
+        android:id="@+id/hascastprojectactivity_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        app:pagedividerPadding="10dp"
+        app:indicatorColor="@color/layout_title_bg"
+        app:indicatorHeight="@dimen/margin_size_2dp"
+        app:dividerColor="@android:color/transparent" 
+        app:shouldExpand="true" >
+    </com.diyou.view.PagerSlidingTabStrip>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/hascastprojectactivity_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout><!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_has_cast_project.xml -->

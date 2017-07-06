@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_withdraw_item_money"
+        style="@style/common_gray_small_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:text="@string/common_display_money_default" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:layout_below="@+id/tv_withdraw_item_money"
+        android:text="提现金额" 
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_withdraw_item_time"
+        style="@style/common_gray_small_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:text="@string/common_display_time_default" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_item_status"
+        android:singleLine="true"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:text="@string/common_display_status_default" />
+
+</RelativeLayout>
+<!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/item_withdraw_record_lv.xml -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/dark_bule" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_titlebar_blue" >
+
+        <ImageView
+            android:id="@+id/loginactivity_back"
+            style="@style/ButtonBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+       
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="新标题"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_20sp" />
+
+</RelativeLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/investmentdetailsactivity_titlelayout.xml -->

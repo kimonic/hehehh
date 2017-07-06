@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical"
+    tools:context="com.diyou.activity.RechargeActivity" >
+
+    <include layout="@layout/layout_common_title_bar" />
+<com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/iv_type_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" 
+            android:src="@drawable/yibao_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_type_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp" >
+
+            <TextView
+                android:id="@+id/tv_withdraw_bank_type"
+                style="@style/common_black_mid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="易宝托管" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_bank_account"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="账号"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_recharge_select_trust"
+                style="@style/common_gray_small_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_centerVertical="true"
+                android:text="选择托管平台"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/table_arrow"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/recharge_withdraw_money" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_bank_type0"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignParentRight="true"
+        android:text="@string/common_display_yuan_default" />
+
+    <EditText
+        android:id="@+id/et_recharge_money"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_withdraw_bank_type0"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:hint="@string/recharge_money_hint"
+        android:gravity="center_vertical|right"
+        android:background="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_withdraw_bank_type1"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/recharge_withdraw_fee" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_bank_type2"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_withdraw_bank_type1"
+        android:layout_alignBottom="@+id/tv_withdraw_bank_type1"
+        android:layout_alignParentRight="true"
+        android:text="@string/common_display_yuan_default" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_fee"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/tv_withdraw_bank_type2"
+        android:layout_toRightOf="@+id/tv_withdraw_bank_type1"
+        android:layout_centerVertical="true"
+        android:text="@string/common_display_money_default"
+        android:gravity="center_vertical|right"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_withdraw_bank_type5"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/recharge_real_account" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_bank_type4"
+        style="@style/common_black_mid_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_withdraw_bank_type5"
+        android:layout_alignBottom="@+id/tv_withdraw_bank_type5"
+        android:layout_alignParentRight="true"
+        android:text="@string/common_display_yuan_default"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_real"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/tv_withdraw_bank_type4"
+        android:layout_toRightOf="@+id/tv_withdraw_bank_type5"
+        android:layout_centerVertical="true"
+        android:text="@string/common_display_money_default"
+        android:textColor="@color/red"
+        android:gravity="center_vertical|right"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+
+<Button
+    android:id="@+id/btn_withdraw_submit"
+    style="@style/button"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="8dp"
+    android:enabled="false"
+    android:text="下一步"
+    />
+   
+
+</LinearLayout>
+<!-- From: file:/E:/work/demo/Android_SanHeCaiFu/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_recharge.xml -->

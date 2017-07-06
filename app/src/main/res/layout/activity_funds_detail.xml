@@ -1,0 +1,447 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FundsDetailActivity"
+    android:background="@color/layout_bg" >
+
+ <include android:id="@+id/funds_detail_title_layout" 
+     layout="@layout/layout_common_title_bar"/>
+ 
+  <com.diyou.view.LoadingLayout
+        android:id="@+id/fund_detail_loadlayout"
+        android:layout_below="@+id/funds_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.diyou.view.LoadingLayout>
+    <com.diyou.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/sv_fund_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/funds_detail_title_layout"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:background="@color/layout_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/dark_bule" >
+
+        <TextView
+            android:id="@+id/tv_fund_money_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/common_display_money_default"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fund_money_sum"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/funds_detail_sum" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_detail_sum_money"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginLeft="3dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+             <RelativeLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/qianhuise"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_above="@+id/imageView2" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/funds_detail_ke" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/linearLayout1"
+                android:text="@string/fund_detail_can_balance"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_can_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="@string/common_display_money_default"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/common_display_yuan_default"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+           
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+             <RelativeLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/qianhuise"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_above="@+id/imageView3" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/funds_detail_dong"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/linearLayout2"
+                android:text="@string/fund_detail_freeze_balance"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_freeze_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textView8"
+                android:text="@string/common_display_money_default"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_money_sum0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/common_display_yuan_default"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+           
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+             <RelativeLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_fund_money_sum1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/qianhuise"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_above="@+id/imageView4" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/funds_detail_yi"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fund_money_sum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/linearLayout3"
+                android:text="@string/fund_detail_interest_received"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_interest_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_fund_money_sum2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_fund_money_sum2"
+                android:text="@string/common_display_money_default"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_money_sum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/common_display_yuan_default"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+           
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+             <RelativeLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_fund_money_sum5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/qianhuise"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_above="@+id/imageView5" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/funds_detail_ben"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fund_money_sum6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/linearLayout4"
+                android:text="@string/fund_detail_collection_capital"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_collection_capital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_fund_money_sum6"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_fund_money_sum6"
+                android:text="@string/common_display_money_default"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/common_display_yuan_default"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+           
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+             <RelativeLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_fund_money_sum8"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/qianhuise"
+                  android:layout_centerHorizontal="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_above="@+id/imageView6" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/funds_detail_li"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fund_money_sum9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/linearLayout5"
+                android:text="@string/fund_detail_collection_interest"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_fund_collection_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_fund_money_sum9"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_fund_money_sum9"
+                android:text="@string/common_display_money_default"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/common_display_yuan_default"
+                android:textColor="@color/huise"
+                android:textSize="15sp" />
+
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+    </LinearLayout>
+    </com.diyou.pulltorefresh.PullToRefreshScrollView>
+
+        <LinearLayout
+            android:id="@+id/rl_fund_detail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/investment_fragment_item_bg" >
+
+            <RelativeLayout
+                android:id="@+id/rl_fund_detail_recharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/personal_center_recharge"
+                    android:textColor="@color/qianlanse" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/qianhuise" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fund_detail_withdraw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/personal_center_withdraw"
+                    android:textColor="@color/qianlanse" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+</RelativeLayout>

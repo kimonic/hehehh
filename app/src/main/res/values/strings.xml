@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mnull"></string>
+    <string name="app_name">土豆金服</string>
+    <string name="app_title">V5</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="no_internet">无网络连接~！</string>
+    <string name="generic_server_down">连接服务器失败~！</string>
+    <string name="generic_error">网络异常,请稍后再试~！</string>
+    <string name="loading_for_more_tips">没有更多数据</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_end_load_more"></string>
+    <string name="progress_wait">请等待...</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <!-- common -->
+    <string name="common_display_money_default">0.00</string>
+    <string name="common_display_title_default">标题</string>
+    <string name="common_display_time_default">时间</string>
+    <string name="common_display_status_default">状态</string>
+    <string name="common_display_type_default">类型</string>
+    <string name="common_display_yuan_default">元</string>
+    <string name="common_display_phone_default">188****1234</string>
+    <string name="common_display_version_default">V1.0</string>
+    <string name="common_operate_on_pc">该功能手机端暂未开放，请到PC端操作！</string>
+    <string name="common_no_more_record">无更多记录</string>
+    <string name="common_di">第</string>
+    <string name="common_peroid">期</string>
+    <string name="common_ten_thousand_yuan">万元</string>
+    <string name="common_ten_thousand">万</string>
+    <string name="common_null">无</string>
+    <string name="common_deadline">期限 </string>
+    <string name="common_day">天 </string>
+    <string name="common_month">个月 </string>
+    <string name="common_peroid_sum">共</string>
+    <string name="common_check">查看</string>
+    <string name="common_loan_agreement">《借款协议》</string>
+    <string name="common_loan_agreement_text">借款协议</string>
+    <string name="common_creditor_transfer_agreement">《债权转让协议》</string>
+    <string name="common_creditor_transfer_agreement_text">债权转让协议</string>
+    <string name="common_web_agreement_text">网站服务协议</string>
+     <string name="common_next">下一步</string>
+     <string name="common_phone">手机</string>
+     <string name="common_pick_photo">相册选择</string>
+     <string name="common_take_photo">相机拍照</string>
+     
+
+     <!-- 提示信息 -->
+     <string name="remind_data_parse_exception">数据解析异常</string>
+     <string name="remind_input_bankcard">请输入银行卡卡号</string>
+     <string name="remind_input_bankcard_sixteen">请输入至少16位的银行卡号</string>
+     <string name="remind_input_old_bankcard">请输入原卡号</string>
+     <string name="remind_submit_new_bankcard">请确认新卡号</string>
+     <string name="remind_input_new_bankcard">请输入新卡号</string>
+     <string name="remind_input_pwd">请输入密码</string>
+     <string name="remind_input_email">请输入邮箱号</string>
+     <string name="remind_input_phone_num">请输入手机号码</string>
+     <string name="remind_bind_bank_card">请先绑定银行卡</string>
+     <string name="remind_bind_email">请绑定邮箱</string>
+     <string name="remind_bind_phone">请绑定手机</string>
+     <string name="remind_input_name">请输入姓名</string>
+     <string name="remind_input_login_pwd">请输入登录密码</string>
+     <string name="remind_input_chinese_name">请输入中文姓名</string>
+     <string name="remind_input_id">请输入身份证号</string>
+     <string name="remind_add_id_photo">请添加身份证正反面照</string>
+     <string name="remind_set_pay_password">请设置支付密码</string>
+     <string name="remind_login">请先登录</string>
+     <string name="remind_new_bankcard_different">新卡号输入不一致</string>
+     <string name="remind_old_new_bankcard_different">新卡号不能与原卡号一致</string>
+     <string name="remind_error_old_bankcard">原卡号错误,请重新输入</string>
+     <string name="remind_email_already_use">该邮箱已被验证,请重新输入</string>
+     <string name="remind_phone_already_use">该手机已被绑定，请重新输入</string>
+     <string name="remind_input_user_name">请输入用户名</string>
+     <string name="remind_input_bid_password">请输入投资密码</string>
+     <string name="remind_input_pay_password">请输入6–15位的支付密码</string>
+     <string name="remind_input_login_password">密码应为6–15位的数字和字母组合！</string>
+     <string name="remind_pwd_illegal_word">密码存在非法字符</string>
+     <string name="remind_pwd_illegal">密码不合法</string>
+     <string name="remind_pwd_all_num">密码不能为纯数字</string>
+     <string name="remind_pwd_all_letter">密码不能为纯字母</string>
+     <string name="remind_input_correct_phone">请输入正确的手机号！</string>
+     <string name="remind_input_correct_auth_code">请输入正确的验证码</string>
+     <string name="remind_send_auth_code_first">请先发送验证码</string>
+     <string name="remind_input_auth_code">请输入验证码</string>
+     <string name="remind_six_auth_code">验证码为6位数</string>
+     <string name="remind_select_opening_bank">请选择开户行</string>
+     <string name="remind_input_opening_bank_name">请输入开户行名称</string>
+     <string name="remind_select_bank_city">请选择开户行所在省市</string>
+     <string name="remind_bind_bank_card_succeed">绑定银行卡成功</string>
+     <string name="remind_bind_user_no_exist">该账号尚未注册，请注册！</string>
+     <string name="remind_input_money_ten_multiple">输入金额必须为10的倍数</string>
+     <string name="remind_account_no_money">账户余额不足</string>
+     <string name="remind_bid_less_than_base">投资不能小于起投金额</string>
+     <string name="remind_bid_more_than_transfer">不能大于最高转让价格</string>
+     <string name="remind_not_bid_self">不能投自己的标</string>
+     <string name="remind_input_phone_auth_code">请输入手机短信验证码</string>
+     <string name="remind_service_info_error">客服信息获取失败</string>
+    <string name="remind_send_succeed">发送成功</string>
+    <string name="remind_transfer_succeed">转让成功</string>
+    <string name="remind_bid_succeed">投资成功</string>
+    <string name="remind_bid_fail">投资失败</string>
+    <string name="remind_buy_succeed">购买成功</string>
+    <string name="remind_buy_fail">购买失败</string>
+    <string name="remind_withdraw_succeed">提现成功</string>
+    <string name="remind_withdraw_fail">提现失败</string>
+    <string name="remind_recharge_succeed">充值成功</string>
+    <string name="remind_recharge_fail">充值失败</string>
+    <string name="remind_bind_succeed">绑定成功</string>
+    <string name="remind_bind_fail">绑定失败</string>
+    <string name="remind_unbind_succeed">解绑成功</string>
+    <string name="remind_unbind_fail">解绑失败</string>
+    <string name="remind_settlement_succeed">结算成功</string>
+    <string name="remind_register_succeed">注册成功</string>
+    <string name="remind_register_fail">注册失败</string>
+    <string name="remind_login_succeed">登录成功</string>
+    <string name="remind_update_succeed">修改成功</string>
+    <string name="remind_set_succeed">设置成功</string>
+     <string name="remind_load_fail">加载失败</string>
+     <string name="remind_loading">正在加载中…</string>
+     <string name="remind_no_data">暂无数据</string>
+     <string name="remind_no_more_data">无更多数据</string>
+     <string name="remind_no_more_record">无更多记录</string>
+     <string name="remind_one_more_exit">再按一次退出</string>
+     <string name="remind_promotion_url_error">推广链接错误，请刷新后重试</string>
+     <string name="remind_wait_check">数据上传成功，等待审核</string>
+     <string name="remind_phone_error">手机号码格式错误</string>
+     <string name="remind_email_error">邮箱账号格式错误</string>
+     <string name="remind_phone_no_exist">该手机不存在</string>
+     <string name="remind_email_no_exist">该邮箱不存在</string>
+     
+     <string name="remind_dialog_login">登录中…</string>
+     <string name="remind_dialog_pay">支付中…</string>
+     <string name="remind_dialog_connect">连接中…</string>
+     <string name="remind_dialog_transfer">转让中…</string>
+     <string name="remind_dialog_loading">加载中…</string>
+     <string name="remind_dialog_set">设置中…</string>
+     
+     <!-- dialog -->
+     <string name="dialog_title_set_paypassword">支付密码</string>
+     <string name="dialog_subtitle_set_paypassword">您还未设置支付密码，是否现在去设置?</string>
+     <string name="dialog_title_set_realname">实名认证</string>
+     <string name="dialog_subtitle_set_realname">您还未实名认证，是否现在认证?</string>
+     <string name="dialog_title_bind_phone">手机绑定</string>
+     <string name="dialog_subtitle_bind_phone">您还未绑定手机，是否现在绑定?</string>
+     <string name="dialog_title_forgot_gesture">忘记手势密码</string>
+     <string name="dialog_subtitle_forgot_gesture">需要重新登录账号?</string>
+     <string name="dialog_title_set_gesture">登录成功！</string>
+     <string name="dialog_subtitle_set_gesture">马上设置手势密码?</string>
+     <string name="dialog_title_exit_login">退出登录</string>
+     <string name="dialog_subtitle_exit_login">你确定退出登录吗?</string>
+     <string name="dialog_title_version_updating">版本更新</string>
+     <string name="dialog_subtitle_version_updating">发现最新版本：</string>
+    
+    <!-- titlelayout -->
+    <string name="titlelayout_back">返回</string>
+    <string name="titlelayout_before_login">填写注册或登录账号</string>
+    <string name="titlelayout_recommended">填写推荐人</string>
+    <string name="titlelayout_login">登录</string>
+    <string name="titlelayout_register">注册</string>
+
+    <!-- MainActivity -->
+    <string name="mainactivity_tab_home">首页</string>
+    <string name="mainactivity_tab_investment">我要投资</string>
+    <string name="mainactivity_tab_loan">我的借款</string>
+    <string name="mainactivity_tab_account">个人中心</string>
+
+    <!-- HomeFragment -->
+    <string name="homefragment_login">立即登录</string>
+    <string name="homefragment_register">立即注册</string>
+    <string name="homefragment_start_making_money">开始赚钱</string>
+    <string name="homefragment_annual_income">年化收益</string>
+    <string name="homefragment_ad">理财从这里起航！</string>
+     <string name="homefragment_wap_title">帝友V5wap端</string>
+<!-- 	<string name="ad_title_msg3">交易突破60亿</string>
+	<string name="ad_title_msg2">资金托管，安全放心</string>
+	<string name="ad_title_msg1">稳定收益，便捷投资</string>
+	<string name="ad_title">广告头条</string> -->
+	<string name="ad_title_new_forecast">新标预告</string>
+    <!-- InvestmentFragment -->
+    <string name="investmentfragment_title">我要投资</string>
+    <string name="investmentfragment_population">投资人数：</string>
+    <string name="investmentfragment_guarantee">担保方:</string>
+    <string name="investmentfragment_invest_list">投资列表</string>
+    <string name="investmentfragment_credior_transfer">债权列表</string>
+    <!-- AccountFragment -->
+    <string name="accountfragment_title">我的账户</string>
+    <string name="accountfragment_account_name">账户名：</string>
+    <string name="accountfragment_huifu_accoun_name">汇付账户名：</string>
+    <string name="accountfragment_earnings_instructions">尊敬的，你的账户累计收益（元）</string>
+    <string name="accountfragment_account_balance_yuan">账户余额（元）</string>
+    <string name="accountfragment_collecting_income">待收收益（元）</string>
+    <string name="accountfragment_freeze_funds">冻结资金（元）</string>
+    <string name="accountfragment_collecting_principal">待收本金（元）</string>
+    <string name="accountfragment_money_management">资金管理</string>
+    <string name="accountfragment_mybankcard">我的银行卡</string>
+    <string name="accountfragment_coupons">优惠券</string>
+    <string name="accountfragment_has_cast_project">已投项目</string>
+    <string name="accountfragment_creditor_rights_transfer">债权转让</string>
+    <string name="accountfragment_transaction_details">交易明细</string>
+    <string name="accountfragment_security_account">安全账户</string>
+    <string name="accountfragment_security_level">安全等级：</string>
+    <string name="accountfragment_account_balance">账户余额：</string>
+    <string name="accountfragment_gestures_password">手势密码</string>
+    <string name="accountfragment_set">已经设置点击修改</string>
+    <string name="accountfragment_not_set">未设置点击设置</string>
+
+    <!-- PersonalCenterFragment -->
+    <string name="PersonalCenter_title">个人中心</string>
+    <!-- MoreFragment -->
+    <string name="morefragment_title">更多</string>
+    <!-- MoreFragment listView Item -->
+    <string name="morefragment_item_newbie_guide">新手指南</string>
+    <string name="morefragment_update_inspection">更新检查</string>
+    <string name="morefragment_feedback">意见反馈</string>
+    <string name="morefragment_telephone">客服电话</string>
+    <string name="morefragment_working_time1">电话时间：周一至周六 9：00&#8211;18：00</string>
+    <string name="morefragment_working_time2">在线客服：周一至周六 9：00&#8211;21：00</string>
+
+    <string name="morefragment_phone_number">400&#8211;888&#8211;888</string>
+    <string name="title_activity_investment_details">InvestmentDetailsActivity</string>
+    <!-- InvestmentDetailsActivity -->
+    <string name="investmentdetailsactivity_title">投资详情</string>
+    <string name="investmentdetailsactivity_borrowing_details">借款详情</string>
+    <string name="investmentdetailsactivity_basic_information">基本信息</string>
+    <string name="investmentdetailsactivity_investment_record">投资记录</string>
+    <string name="investmentdetailsactivity_reimbursement_means">还款方式：</string>
+    <string name="investmentdetailsactivity_completed_progress">完成进度：</string>
+    <string name="investmentdetailsactivity_state">状态：</string>
+    <string name="investmentdetailsactivity_still_need">还需：</string>
+    <string name="investmentdetailsactivity_remaining_time">截止时间：</string>
+    <string name="investmentdetailsactivity_late_time">逾期时间：</string>
+    <string name="investmentdetailsactivity_borrowing_amount">借款金额：</string>
+    <string name="investmentdetailsactivity_safeguard_way">保障方式：</string>
+    <string name="investmentdetailsactivity_mark_total_amount">标的总额：</string>
+    <string name="investmentdetailsactivity_annual_interest_rate">年利率</string>
+    <string name="investmentdetailsactivity_reimbursement_deadline">还款期限：</string>
+    <string name="investmentdetailsactivity_immediate_investment">立即投资</string>
+    <string name="investmentdetailsactivity_investmentAfterLogin">登录后即可投资</string>
+    <string name="investmentdetailsactivity_borrowing_species">标种类：</string>
+    <string name="title_activity_creditor_rights_details">CreditorRightsDetailsActivity</string>
+
+    <!-- CreditorRightsDetailsActivity -->
+    <string name="creditorrightsdetailsActivity_title">债权详情</string>
+    <string name="creditorrightsdetailsActivity_amount">起投金额：</string>
+    <string name="creditorrightsdetailsActivity_repayment_method">还款方式：</string>
+    <string name="creditorrightsdetailsActivity_transfer_time">转让期数：</string>
+    <string name="creditorrightsdetailsActivity_loan_term">借款期限：</string>
+    <string name="creditorrightsdetailsActivity_repayment_period">还款期限：</string>
+    <string name="creditorrightsdetailsActivity_Fee"> &#160;手续费：</string>
+    <string name="creditorrightsdetailsActivity_remaining_days">剩余期限：</string>
+    <string name="creditorrightsdetailsActivity_total_amount_debt">债权总额</string>
+    <string name="creditorrightsdetailsActivity_transfer_price">转让价格(元)：</string>
+    <string name="creditorrightsdetailsActivity_annual_interest_rate">年利率</string>
+    <string name="creditorrightsdetailsActivity_last_reimbursement_deadline">最后还款期限：</string>
+    <string name="creditorrightsdetailsActivity_collecting_interest">待收本息：</string>
+    <string name="creditorrightsdetailsActivity_transfer_record">转让记录</string>
+    <string name="creditorrightsdetailsActivity_submit">立即购买</string>
+    <string name="title_activity_the_tender">TheTenderActivity</string>
+
+    <!-- TheTenderActivity -->
+    <string name="thetenderactivity_title">投标</string>
+    <string name="thetenderactivity_amount_available">可用金额(元)</string>
+    <string name="thetenderactivity_bid_amount">投标金额(元)</string>
+    <string name="thetenderactivity_submit_the_tender">确认投标</string>
+    <string name="title_activity_money_management">MoneyManagementActivity</string>
+    <!-- MoneyManagementActivity -->
+    <string name="moneymanagementactivity_title">资金管理</string>
+    <string name="moneymanagementactivity_account_information">尊敬的</string>
+    <string name="moneymanagementactivity_account_information1">，您的账户累计收益(元)</string>
+    <string name="moneymanagementactivity_uncollected_revenue">待收收益(元)</string>
+    <string name="moneymanagementactivity_freeze_funds">冻结资金(元)</string>
+    <string name="moneymanagementactivity_collected_the_principal">待收本金(元)</string>
+    <string name="moneymanagementactivity_account_balance">账户余额(元)</string>
+    <string name="moneymanagementactivity_withdrawal">提现</string>
+    <string name="moneymanagementactivity_top_up">充值</string>
+    <string name="title_activity_phone_registered">PhoneRegisteredActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <!-- LoginActivity -->
+    <string name="loginactivity_login">立即登录</string>
+    <string name="loginactivity_quick_regist">快速注册</string>
+    <string name="loginactivity_login_pwd">登录密码</string>
+    <string name="loginactivity_password_login">密码登录</string>
+    <string name="loginactivity_code_login">验证码登录</string>
+    <string name="loginactivity_account_login">账号登录</string>
+    <string name="loginactivity_input_pwd">请输入您的登录密码</string>
+    <string name="loginactivity_input_code">请输入您的验证码</string>
+    <string name="loginactivity_forget_password">忘记密码?</string>
+    <string name="loginactivity_toast_show1">请输入密码</string>
+    <string name="loginactivity_toast_show2">请输入验证码</string>
+    <string name="loginactivity_toast_success">发送成功</string>
+    <!-- BeforeLoginActivity -->
+    <string name="beforeloginactivity_before_login">下一步</string>
+    <string name="beforeloginactivity_user_name">请输入手机号/用户名</string>
+    <!-- MyBankCardActivity -->
+    <string name="title_activity_my_bank_card">MyBankCardActivity</string>
+    <string name="mybankcardactivity_quick_recharge_card">快捷充值卡</string>
+    <string name="mybankcardactivity_no_binding_quick_recharge_card">您还没绑定快捷充值卡</string>
+    <string name="mybankcardactivity_recharge_binding">充值绑定</string>
+    <string name="mybankcardactivity_cash_bank_card">提现银行卡</string>
+    <string name="mybankcardactivity_bank_card_name">银行卡名称</string>
+    <string name="mybankcardactivity_cash_bank_number">6227****4026</string>
+    <!-- AddBankCardActivity -->
+    <string name="addbankcardactivity_title_name">我的银行卡</string>
+    <string name="addbankcardactivity_name">开户名</string>
+    <string name="addbankcardactivity_ID">身份证号</string>
+    <string name="addbankcardactivity_select_bank">选择银行</string>
+    <string name="addbankcardactivity_bank_number">银行卡号</string>
+    <string name="addbankcardactivity_next">下一步</string>
+    <string name="addbankcardactivity_submit">绑定</string>
+    <!-- HasCastProjectActivity -->
+    <string name="title_activity_has_cast_project">HasCastProjectActivity</string>
+    <string name="hascastprojectactivity_money_backing">回款中</string>
+    <string name="hascastprojectactivity_money_binding">投标中</string>
+    <string name="hascastprojectactivity_money_end">已结束</string>
+    <string name="hascastprojectactivity_item_use">经营店急</string>
+    <string name="hascastprojectactivity_item_investment_money">投资金额：</string>
+    <string name="hascastprojectactivity_item_time">2014/05/12</string>
+    <string name="hascastprojectactivity_item_totle_profit">总收益（元）</string>
+    <string name="hascastprojectactivity_item_has_profit">已收益（元）</string>
+    <string name="hascastprojectactivity_item_wait_profit">待收本金（元）</string>
+    <!-- creditor_item -->
+    <string name="creditor_item_backing">回款中</string>
+    <string name="creditor_item_binding">投标中</string>
+    <string name="creditor_item_end">已结束</string>
+    <string name="creditor_item_use">经营店急</string>
+    <string name="creditor_item_investment_money">待还/总期数</string>
+    <string name="creditor_item_time">2014/05/12</string>
+    <string name="creditor_item_totle_profit">待收本金（元）</string>
+    <string name="creditor_item_has_profit">待收利息（元）</string>
+    <string name="creditor_item_wait_profit">转让价格（元）</string>
+    <!-- ProjectRepaymentPlanActivity -->
+    <string name="title_activity_project_repayment_plan">项目还款计划</string>
+    <string name="projectrepaymentaplanctivity_repayment_period">收款期数</string>
+    <string name="projectrepaymentaplanctivity_plan_repayment_time">计划收款时间</string>
+    <string name="projectrepaymentaplanctivity_repayment_money">收款金额</string>
+    <string name="projectrepaymentaplanctivity_actual_money">收款本金</string>
+    <string name="projectrepaymentaplanctivity_actual_interest">收款利息</string>
+    <!-- CreditorRgihtAssignmentActivity -->
+    <string name="creditorrgihtassignmentactivity_money_backing">可转让</string>
+    <string name="creditorrgihtassignmentactivity_money_binding">转让中</string>
+    <string name="creditorrgihtassignmentactivity_money_end">已转让</string>
+    <string name="creditorrgihtassignmentactivity_item_assignment_money">转让价格（元）</string>
+    <string name="creditorrgihtassignmentactivity_item_wait_interst">待收利息（元）</string>
+    <string name="creditorrgihtassignmentactivity_item_wait_profit">待收本金（元）</string>
+    <!-- CreditorRightsActivity -->
+    <string name="title_activity_creditor_rights">债权转让</string>
+    <string name="creditorrgihty_assignment_incestment_money">转让投资借款：</string>
+    <string name="creditorrgihty_assignment_max_money">最高转让价格：</string>
+    <string name="creditorrgihty_counter_fee">手续费：</string>
+    <string name="creditorrgihty_assignment_money">转让金额（元）</string>
+    <string name="creditorrgihty_check_assignment">确 认 转 让</string>
+    <!-- TransactionDetailsActivity -->
+    <string name="title_activity_transaction_details">交易明细</string>
+    <string name="activity_transaction_details_state">交易成功</string>
+
+    <!-- PhoneRegisteredActivity -->
+    <string name="phoneregisteredactivity_title">注册</string>
+    <string name="phoneregisteredactivity_phone_num">手机号码</string>
+    <string name="phoneregisteredactivity_obtain_verification_code">获取验证码</string>
+    <string name="phoneregisteredactivity_verification_code">验证码</string>
+    <string name="phoneregisteredactivity_user_name">用戶名</string>
+    <string name="phoneregisteredactivity_password">登录密码</string>
+    <string name="phoneregisteredactivity_confirm_password">确认密码</string>
+    <string name="phoneregisteredactivity_referees">推荐人(选填)</string>
+    <string name="phoneregisteredactivity_agreed_to">我同意</string>
+    <string name="phoneregisteredactivity_use_terms">《工艺通使用条款》</string>
+    <string name="phoneregisteredactivity_hidden_terms">《隐藏条款》</string>
+    <string name="phoneregisteredactivity_submit">立即注册</string>
+    <string name="phoneregisteredactivity_phone_registered">1、手机注册</string>
+    <string name="phoneregisteredactivity_open_huifu">2、开通汇付天下</string>
+    <string name="phoneregisteredactivity_add">和</string>
+    <string name="phoneregisteredactivity_phone_number_error">请输入合法的手机号码</string>
+    <string name="registeractivity_send_verification_code">发送验证码</string>
+    <string name="registeredactivity_immediate_regeist">立即登录</string>
+    <string name="registeredactivity_regeist">注册</string>
+    <string name="registeredactivity_before_regeist">下一步</string>
+    <string name="registeredactivity_regeist_partA">注册即视为同意</string>
+    <string name="registeredactivity_regeist_partB">《网站服务协议》</string>
+    <string name="registeredactivity_regeist_sendsms_partA">已经向</string>
+    <string name="registeredactivity_regeist_sendsms_partB">发送短信，请输入短信验证码完成注册。</string>
+    <string name="registeredactivity_inout_password">请输入6-15个由字母、数字组成的密码</string>
+    <string name="registeredactivity_input_ode">请输入你的验证码</string>
+    <string name="registeredactivity_account_login">注册账号</string>
+    <string name="registeredactivity_user_name">请输入推荐人账号/手机号</string>
+
+    <!-- HuifuAuthenticationActivity -->
+    <string name="escrowregistered_huifu_authentication">开通汇付天下</string>
+    <string name="escrowregistered_huifu_back">上一步</string>
+
+    <!-- loading -->
+    <string name="loading">正在加载中...</string>
+    <string name="reloading">点击重新加载</string>
+    <!-- no_login -->
+    <string name="no_login">还未登录！</string>
+    <!-- ListCreditorRightsTransferFragment -->
+    <string name="listcreditorrightstransfer_transferPrice">转让价格</string>
+    <string name="listcreditorrightstransfer_transferValue">债权价值</string>
+    <string name="listcreditorrightstransfer_borrowingRates">原标年化收率</string>
+    <string name="listcreditorrightstransfer_transferNperOrTotalperiods">转让期数</string>
+    <string name="listcreditorrightstransfer_timeLimit">最后还款期限：</string>
+    <string name="listcreditorrightstransfer_and">/</string>
+    <!-- HuifuBindBankCardActivity -->
+    <string name="title_activity_huifu_bind_bank_card">添加银行卡</string>
+    <!-- AccountSecurityActivity -->
+    <string name="title_activity_account_security">账户安全</string>
+    <string name="title_activity_account_security_level_title">你的账户安全等级为</string>
+    <string name="title_activity_account_security_level_tip">建议立即完善资料</string>
+    <string name="activity_account_security_realname">实名认证</string>
+    <string name="activity_account_security_email">邮箱认证</string>
+    <string name="activity_account_security_phone">手机</string>
+    <string name="activity_account_security_login_password">登录密码</string>
+    <string name="activity_account_security_huifu">进入汇付认证</string>
+    <string name="activity_account_security_no_authentication">未认证</string>
+    <string name="activity_account_security_has_binded">已绑定</string>
+    <string name="activity_account_security_check">已认证</string>
+    <!-- BorrowingDetailsFragment -->
+    <string name="borrowingdetailsfragment_details">详情</string>
+    <string name="borrowingdetailsfragment_agreement">借款协议(范本)</string>
+    <string name="borrowingdetailsfragment_userInformation">用户信息</string>
+    <string name="borrowingdetailsfragment_name">姓名：</string>
+    <string name="borrowingdetailsfragment_age">年龄：</string>
+    <string name="borrowingdetailsfragment_marriage">婚姻：</string>
+    <string name="borrowingdetailsfragment_diploma">学历：</string>
+    <string name="borrowingdetailsfragment_realEstate">房产：</string>
+    <string name="borrowingdetailsfragment_vehicle">车辆：</string>
+    <string name="borrowingdetailsfragment_jobs">工作岗位：</string>
+    <string name="borrowingdetailsfragment_workExperience">工作年限：</string>
+    <string name="borrowingdetailsfragment_income">收入：</string>
+    <string name="borrowingdetailsfragment_companySize">公司规模：</string>
+    <string name="borrowingdetailsfragment_mortgage">房贷：</string>
+    <string name="borrowingdetailsfragment_carLoans">车贷：</string>
+    <string name="borrowingdetailsfragment_borrowingRecord">借款记录</string>
+    <string name="borrowingdetailsfragment_borrowTheScore">借入笔数：</string>
+    <string name="borrowingdetailsfragment_penForSuccess">成功笔数：</string>
+    <string name="borrowingdetailsfragment_totalBborrowing">借入总额：</string>
+    <string name="borrowingdetailsfragment_stayStillPrincipalAndInterest">待还本息：</string>
+    <string name="borrowingdetailsfragment_isAlsoThePrincipalAndInterest">已还本息：</string>
+    <string name="borrowingdetailsfragment_overdueAmount">逾期金额：</string>
+    <string name="borrowingdetailsfragment_numberOfOverdue">逾期次数：</string>
+    <!-- emailactivationactivity -->
+    <string name="emailactivation_title">邮箱认证</string>
+    <string name="emailactivation_email">您的邮箱</string>
+    <string name="emailactivation_submit">确认提交</string>
+    <string name="emailactivation_email_wrong">邮箱格式不正确,请重新输入</string>
+    <!-- UpdateEmailActivity -->
+    <string name="activity_update_email_title">修改邮箱认证</string>
+    <string name="activity_update_email_new_email">输入新邮箱地址</string>
+    <!-- AuditConclusionFragment -->
+    <string name="auditconclusionfragment_login">登录</string>
+    <string name="auditconclusionfragment_theRelevantData">相关资料</string>
+    <string name="auditconclusionfragment_registered">注册</string>
+    <string name="auditconclusionfragment_loginPrompt">您需登录后才可以查看</string>
+    <string name="auditconclusionfragment_reviewTheStatus">审核状态</string>
+    <string name="auditconclusionfragment_proofOfIdentity">身份证明：</string>
+    <string name="auditconclusionfragment_marriage">结婚证：</string>
+    <string name="auditconclusionfragment_businessLicense">营业执照：</string>
+    <string name="auditconclusionfragment_qualification">学历证明：</string>
+    <string name="auditconclusionfragment_dataEvaluation">数据评估：</string>
+    <string name="auditconclusionfragment_fieldExperiencePhotos">实地经营照片：</string>
+    <string name="auditconclusionfragment_qualifications">资质证书：</string>
+    <string name="auditconclusionfragment_incomeProof">收入证明：</string>
+    <string name="auditconclusionfragment_addressProof">住址证明：</string>
+    <string name="auditconclusionfragment_creditReport">信用报告：</string>
+    <string name="auditconclusionfragment_assetProof">资产证明：</string>
+    <string name="auditconclusionfragment_realName">户口本：</string>
+    <string name="auditconclusionfragment_offlineAssetsMortgage">线下资产抵押：</string>
+    <string name="auditconclusionfragment_credentials">个税缴税凭证或交金记录：</string>
+    <string name="auditconclusionfragment_auditConclusion">审核结论</string>
+    <!-- investmentrecordfragment -->
+    <string name="investmentrecordfragment_theBidder">投标人</string>
+    <string name="investmentrecordfragment_investmentAmount">投资金额</string>
+    <string name="investmentrecordfragment_tradingHours">交易时间</string>
+    <!-- CreditorRightsDetailsFragment -->
+    <string name="creditorrightsdetailsfragment_details">详情</string>
+    <string name="creditorrightsdetailsfragment_clickToView">&lt;点击查看标详情></string>
+    <string name="creditorrightsdetailsfragment_creditors">债权人：</string>
+    <string name="creditorrightsdetailsfragment_debtors">债务人：</string>
+    <string name="creditorrightsdetailsfragment_safeguardWay">保障方式：</string>
+    <string name="creditorrightsdetailsfragment_transferTheTotalPeriods">转让期数/总期数：</string>
+    <string name="creditorrightsdetailsfragment_interestToBeCollected">待收本金/利息：</string>
+    <string name="creditorrightsdetailsfragment_creditType">信用类型：</string>
+    <string name="creditorrightsdetailsfragment_methodOfPayment">还款方式：</string>
+    <string name="creditorrightsdetailsfragment_security">保障方式：</string>
+    <string name="creditorrightsdetailsfragment_borrowingDeadline">借款期限：</string>
+    <string name="creditorrightsdetailsfragment_overdueSituation">逾期情况：</string>
+    <string name="title_activity_hui_fu_pay">HuiFuPayActivity</string>
+    <string name="title_activity_project_repayment">ProjectRepaymentActivity</string>
+    <!-- ExitLoginActivity -->
+    <string name="title_activity_exit_login">退出登录</string>
+    <!-- UpdatePhoneNumberActivity -->
+    <string name="title_activity_update_phone_number">修改绑定手机</string>
+    <string name="activity_update_phone_number_old_number">原手机：</string>
+    <!-- UpdateNewLoginPasswordActivity -->
+    <string name="title_activity_update_newlogin_password">登录密码重置</string>
+    <string name="activity_update_newlogin_password_check_update">确认</string>
+    <string name="activity_update_newlogin_password_waring">请设置新密码</string>
+    <string name="activity_update_newlogin_password_new_password">新密码</string>
+    <string name="activity_update_newlogin_password_check_new_password">确认密码</string>
+    <!-- UpdateLoginPasswordActivity -->
+    <string name="title_activity_update_login_password">修改登录密码</string>
+    <string name="activity_update_login_password_check_update">确认修改</string>
+    <string name="activity_update_login_password_old_password">输入原密码</string>
+    <string name="activity_update_login_password_check_new_password">重复新密码</string>
+    <string name="activity_update_login_password_new_password">输入新密码</string>
+    <string name="activity_update_login_password_error_password">输入两次密码不一致</string>
+    <string name="activity_update_login_password_no_meg_password">请填写完整的信息</string>
+    <!-- UpdatePaymentActivity -->
+	<string name="update_paypwd_title">修改支付密码</string>
+	<string name="update_paypwd_input_old">请输入6–15位的原支付密码</string>
+	<string name="update_paypwd_input_new">请输入6–15个字母或数字组合的密码</string>
+	<string name="update_paypwd_new_disagree">两次输入密码不一致</string>
+	<string name="update_paypwd_new_old_same">新密码不能与原密码一样</string>
+	<string name="update_paypwd_submit">确认修改</string>
+    <!-- RegisterSuccessActivity -->
+    <string name="title_activity_register_success">注册成功</string>
+    <string name="title_activity_register_skip">跳过</string>
+    <string name="title_activity_register_tip">手机未激活，将影响你接收资金信息</string>
+    <string name="title_activity_register_activication">立即激活</string>
+    <string name="title_activity_register_no_activication">暂不激活</string>
+    <!-- TopUpActivity -->
+    <string name="title_activity_top_up">充值</string>
+    <string name="activity_top_up_now_money">当前金额（元）</string>
+    <string name="activity_top_up_money">充值金额（元）</string>
+    <string name="activity_top_up_check_top_up">确认充值</string>
+    <string name="activity_top_up_error_money_tip">请输入充值金额</string>
+    <!-- CashActivity -->
+    <string name="title_activity_cash">提现</string>
+    <string name="title_activity_cash_now">立即提现</string>
+    <string name="title_activity_money">金   额</string>
+    <string name="title_activity_min_money">每笔提现金额至少在100元以上</string>
+    <string name="title_activity_tip">提现细则？</string>
+    <!-- investment -->
+    <string name="investment_annual_income">年化收益</string>
+    <string name="investment_borrowing_balance">借款金额</string>
+    <string name="investment_loan_term">借款期限</string>
+    <string name="investment_dateils">投资详情</string>
+    <string name="investment_immediate">立即投资</string>
+    <string name="investment_flow_buy">马上认购</string>
+    <string name="investment_bid">马上投标</string>
+    <string name="financial_calculator">理财计算器</string>
+    <string name="income_calculator">收益计算器</string>
+    <string name="investment_money">投资金额</string>
+    <string name="annual_rate">年化利率</string>
+    <string name="investment_mouth">投资期限</string>
+    <string name="repayment_mode">还款方式</string>
+    <string name="product_expected">产品预计收益</string>
+    <string name="bank_financial_gain">银行理财收益</string>
+    <string name="Financial_description">预估收益计算仅供参考，以实际收益为准</string>
+    <string name="payment_password">输入支付密码</string>
+    <string name="trading_password">请输入交易密码</string>
+    <string name="prosecution_amount">起投金额：</string>
+    <string name="repayment_method">还款方式：</string>
+    <string name="investment_ceiling">投资上限：</string>
+    <string name="loan_term">借款期限：</string>
+    <string name="investment_amount">投资金额（元）：</string>
+    <string name="investment_password">投资密码：</string>
+    <string name="amount_of_investment">可投金额：</string>
+    <string name="account_balance">账户余额：</string>
+    <string name="expected_revenue">预期收益(元)：</string>
+    <string name="income_includes_interest">收益包含利息：</string>
+    <string name="earnings_include_rewards">收益包含奖励：</string>
+    <string name="recharge">充值</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="related_items">关联项目:</string>
+    <string name="balance">余     额：</string>
+
+    <!-- 投标 -->
+    <string name="bid_title">投标</string>
+    <string name="bid_status_full">已满标</string>
+    <string name="bid_unlimited">不限</string>
+    <string name="bid_succeed">投资成功！</string>
+    <string name="bid_fail">投资失败！</string>
+    <!-- cretior -->
+    <string name="creditor_dateils_title">债权详情</string>
+    <string name="creditor_transfer_success">成功转让</string>
+    <string name="creditor_bug_now">立即购买</string>
+    <string name="my_investment">我的投资</string>
+    <string name="my_creditor">我的债权</string>
+    <string name="creditor_value">债权价值：</string>
+    <string name="assignment_period">转让期数</string>
+    <string name="transfer_price">转让价格：</string>
+    <string name="transfer_price_fee">转让手续费：</string>
+    <string name="creditor_financing">债权盈亏</string>
+    <string name="success_transfer_amount">成功转让金额</string>
+    <string name="creditor_transfer">债权转出盈亏</string>
+    <string name="successful_import_amount">成功购买金额</string>
+    <string name="creditor_import">债权购入盈亏</string>
+    <string name="repayment_period">还款期限:</string>
+    <string name="transfer_time">转让时间:</string>
+    <string name="total_period">待还/总期数:</string>
+    <string name="anticipated_income">预计收益：</string>
+    <string name="immediate_transfer">立即转让</string>
+    <string name="transfer_coefficient">转让系数（%）：</string>
+
+    <!-- 图案解锁 -->
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="enter_userName">请输入用户名</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="loginning">登录中...</string>
+    <string name="network_request_failed">网络请求失败,请稍后在试！</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_funds_detail">FundsDetailActivity</string>
+    <string name="title_activity_my_project">MyProjectActivity</string>
+    <string name="title_activity_bind_phone">BindPhoneActivity</string>
+    <string name="title_activity_phone_code">PhoneCodeActivity</string>
+    <string name="title_activity_real_name_auth">RealNameAuthActivity</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_center_title">个人中心</string>
+    <string name="personal_center_income_sum">总累计收益（元）</string>
+    <string name="personal_center_money_sum">账户总资产（元）</string>
+    <string name="personal_center_can_balance">可用余额（元）</string>
+    <string name="personal_center_recharge">充值</string>
+    <string name="personal_center_withdraw">提现</string>
+    <string name="personal_center_my_project">我的项目</string>
+    <string name="personal_center_my_project_msg1">我投资过的项目</string>
+    <string name="personal_center_my_project_msg2">查看项目</string>
+    <string name="personal_center_my_borrowing">我的借款</string>
+    <string name="personal_center_trading_record">交易记录</string>
+    <string name="personal_center_trading_record_msg1">账户流水账</string>
+    <string name="personal_center_trading_record_msg2">快来看看吧</string>
+    <string name="personal_center_my_popularize">我的推广</string>
+    <string name="personal_center_my_popularize_msg1">推广送积分</string>
+    <string name="personal_center_my_popularize_msg2">小伙伴一起来赚钱</string>
+    <string name="personal_center_account_detail">账户详情</string>
+    <string name="personal_center_account_detail_msg1">我的账户明细</string>
+    <string name="personal_center_account_detail_msg2">查看我的账户信息</string>
+    <!-- 我的投资 -->
+    <string name="my_investment_title">投资列表</string>
+    <string name="my_investment_invest_money">投资金额</string>
+    <string name="my_investment_sum_income">总收益</string>
+    <!-- 资金详情 -->
+    <string name="fund_detail_title">资金详情</string>
+    <string name="fund_detail_can_balance">可用余额</string>
+    <string name="fund_detail_freeze_balance">冻结金额</string>
+    <string name="fund_detail_interest_received">已收利息</string>
+    <string name="fund_detail_collection_capital">待收本金</string>
+    <string name="fund_detail_collection_interest">待收利息</string>
+    <string name="fund_detail_sum_money">总资产（元）</string>
+    <!-- 绑定手机 -->
+    <string name="bind_phone_title">手机绑定</string>
+    <string name="bind_phone_input_phone">输入手机号</string>
+    <string name="bind_phone_input_code">输入验证码</string>
+    <string name="bind_phone_next">下一步</string>
+    <string name="bind_phone_submit">确认绑定</string>
+    <string name="bind_phone_remind_msg1">系统已向手机</string>
+    <string name="bind_phone_remind_msg2">发送验证码,</string>
+    <string name="bind_phone_remind_msg3">请将验证码填入上方区域完成验证。</string>
+    <string name="bind_phone_no_verifycode">收不到验证码？请联系客服:</string>
+    <!-- 绑定银行卡 -->
+    <string name="add_bank_title">添加银行卡</string>
+    <string name="change_bank_title">更改银行卡</string>
+    <string name="bank_manager_title">银行卡管理</string>
+    <string name="bank_manager_change_tip">点击银行卡可进行解绑</string>
+    <string name="area_list_title">选择省市</string>
+    <string name="bank_list_title">选择银行</string>
+    <!-- 修改手机 -->
+    <string name="phone_change_title">修改手机</string>
+    <string name="phone_change_change">修改手机</string>
+    <string name="phone_change_check_old">验证旧手机</string>
+    <string name="phone_change_check_new">验证新手机</string>
+    <string name="phone_change_old_phone">原手机号</string>
+    <string name="phone_change_input_new">请输入新的手机号码</string>
+    <string name="phone_change_code_error">验证码错误，请重试</string>
+    <string name="phone_change_submit">确认绑定</string>
+    <!-- 修改邮箱 -->
+    <string name="email_change_title">修改邮箱</string>
+    <string name="email_change_change">修改邮箱</string>
+    <string name="email_change_check_old">验证旧邮箱</string>
+    <string name="email_change_check_new">验证新邮箱</string>
+    <string name="email_change_old_email">原邮箱</string>
+    <string name="email_change_input_new">请输入新的邮箱账号</string>
+
+    <!-- 实名认证 -->
+    <string name="real_name_title">实名认证</string>
+    <string name="real_name_id_name">姓名：</string>
+    <string name="real_name_id_num">身份证号：</string>
+    <string name="real_name_input_name">请输入姓名</string>
+    <string name="real_name_input_num">请输入身份证号</string>
+    <string name="real_name_photo_zheng">身份证正面</string>
+    <string name="real_name_photo_fan">身份证反面</string>
+    <string name="real_name_start_auth">开始认证</string>
+    <string name="real_name_pass_auth">认证通过</string>
+    <string name="real_name_wait_auth">待审核</string>
+    <!-- 提现 -->
+    <string name="withdraw_title">提现</string>
+    <string name="withdraw_title_right">提现记录</string>
+    <string name="withdraw_money_hint">请输入提现金额</string>
+    <string name="withdraw_account_name">开户名</string>
+    <string name="withdraw_subbranch_name">支行名称</string>
+    <string name="withdraw_withdraw_money">提现金额</string>
+    <string name="withdraw_withdraw_fee">提现手续费</string>
+    <string name="withdraw_real_account">实际到账</string>
+    <string name="withdraw_withdraw">提现</string>
+    <!-- 充值 -->
+    <string name="recharge_title">充值</string>
+    <string name="recharge_title_right">充值记录</string>
+    <string name="recharge_money_hint">请输入充值金额</string>
+    <string name="recharge_withdraw_money">充值金额</string>
+    <string name="recharge_detail">充值详情</string>
+    <string name="recharge_withdraw_fee">充值手续费</string>
+    <string name="recharge_real_account">实际到账</string>
+    <!-- 我的推广 -->
+    <string name="my_promotion_title">我的推广</string>
+    <string name="my_promotion_title_right">推广赚钱</string>
+    <string name="my_promotion_person_num">邀请人数:</string>
+    <string name="my_promotion_invest_money">投资提成:</string>
+    <string name="my_promotion_invest_sum">提成总额:</string>
+    <string name="my_promotion_borrow_refund">借款还款提成:</string>
+    <string name="my_promotion_record">推广记录</string>
+    <string name="my_promotion_clear_record">结算记录</string>
+    <string name="my_promotion_look">查看</string>
+    <string name="my_promotion_residue_money">当前剩余结算金额:</string>
+    <string name="my_promotion_full">满</string>
+    <string name="my_promotion_clear_now">立即结算</string>
+    <string name="my_promotion_ten_yuan">10元</string>
+    <string name="my_promotion_clear_one_time">结算一次</string>
+    <string name="my_promotion_clearing">结算中:</string>
+    <string name="my_promotion_filter">筛选</string>
+    <string name="my_promotion_tab_user_name">用户名</string>
+    <string name="my_promotion_tab_invest_sum">投资总额(元)</string>
+    <string name="my_promotion_tab_refund_sum">还款总额(元)</string>
+    <!-- 结算记录 -->
+    <string name="settlement_record_money">结算金额(元)</string>
+    <string name="settlement_record_time">时间</string>
+    <string name="settlement_record_status">状态</string>
+    <!-- 推广记录 -->
+    <string name="promotion_record_user_name">用&#x0020;户&#x0020;名&#x0020;:</string>
+    <string name="promotion_record_type">提成方式:</string>
+    <string name="promotion_record_money">提成金额:</string>
+    <string name="promotion_record_percent">提成比例:</string>
+    <string name="promotion_record_fund_type">资金类型:</string>
+    <!-- 账户详情 -->
+    <string name="account_detail_title">账户详情</string>
+    <string name="account_detail_user_info">用户信息</string>
+    <string name="account_detail_bank_card">银行卡管理</string>
+    <string name="account_detail_yibao">我的汇付账号</string>
+    <string name="account_detail_security_certificate">安全认证</string>
+    <string name="account_detail_phone_bind">手机绑定</string>
+    <string name="account_detail_email_auth">邮箱认证</string>
+    <string name="account_detail_realname_auth">实名认证</string>
+    <string name="account_detail_meterial_auth">材料认证</string>
+    <string name="account_detail_password_setting">密码设置</string>
+    <string name="account_detail_login_password">登录密码</string>
+    <string name="account_detail_gesture_password">手势密码</string>
+    <string name="account_detail_pay_password">支付密码</string>
+    <string name="account_detail_unbound">未绑定</string>
+    <string name="account_detail_unauth">未认证</string>
+    <string name="account_detail_unregister">未注册</string>
+    <string name="account_detail_unset">未设置</string>
+    <string name="account_detail_seted">已设置</string>
+    <string name="account_detail_register">已注册</string>
+    <string name="account_detail_authed">已认证</string>
+    <string name="account_detail_bound">已绑定</string>
+    <string name="account_detail_finished">已完成</string>
+    <string name="account_detail_modify">修改</string>
+    <string name="homepage_time_limit">天期限</string>
+    <string name="homepage_the_case">元起投</string>
+    <!-- 设置 -->
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="setting_title">设置</string>
+    <string name="setting_common_setting">通用设置</string>
+    <string name="setting_site_notice">网站公告</string>
+    <string name="setting_offen_question">常见问题</string>
+    <string name="setting_contact_us">联系客服</string>
+    <string name="setting_version_check">版本检测</string>
+    <string name="setting_service_hours">工作时间</string>
+    <string name="setting_service_hotline">客服热线</string>
+    <string name="setting_exit_login">退出登录</string>
+    <string name="setting_is_exit_login">是否退出登录？</string>
+     <!-- 设置支付密码 -->
+    <string name="set_paypwd_title">设置支付密码</string>
+    <string name="set_paypwd_twice_disagree">两次支付密码输入不一致</string>
+    <string name="set_paypwd_paypwd_loginpwd_like">支付密码不能与登录密码一样</string>
+    <string name="set_paypwd_input_new">输入新的支付密码</string>
+    <string name="set_paypwd_submit_new">确认新的支付密码</string>
+    <string name="set_paypwd_login_pwd">登录密码</string>
+    <string name="set_paypwd_set">确认设置</string>
+    <!-- 邮箱绑定 -->
+    <string name="email_bind_title">邮箱绑定</string>
+    <string name="email_bind_hint">请输入您的邮箱</string>
+    <string name="email_bind_input_right">请输入正确的邮箱账号</string>
+    <string name="email_bind_remind_msg">系统已向邮箱</string>
+    <!-- 找回密码 -->
+    <string name="forgot_password_title">找回密码</string>
+    <string name="forgot_password_phone_title">手机找回密码</string>
+    <string name="forgot_password_email_title">邮箱找回密码</string>
+    <!-- 站内信 -->
+    <string name="inside_letter_title">站内信列表</string>
+    <string name="inside_letter_detail_title">站内信详情</string>
+    <!-- 银行卡管理 -->
+    <string name="bankcard_manager_bind_self_card">请绑定通过实名认证的本人银行卡</string>
+    <string name="bankcard_manager_name">姓名</string>
+    <string name="bankcard_manager_realname_pass">实名认证通过</string>
+    <string name="bankcard_manager_bank_num">银行卡卡号</string>
+    <string name="bankcard_manager_input_bank_num">输入银行卡号</string>
+    <string name="bankcard_manager_select_open_bank">选择开户行</string>
+    <string name="bankcard_manager_select_bank_name">开户行名称</string>
+    <string name="bankcard_manager_select_bank_city">开户行所在省市</string>
+    <string name="bankcard_manager_input_bank_name">填写银行卡开户行名称</string>
+    <!-- 用户信息 -->
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="user_info_title">用户信息</string>
+    <string name="user_info_my_integral">我的积分</string>
+    <string name="user_info_credit_rating">信用等级</string>
+    <string name="user_info_assets_info">资产信息</string>
+    <string name="user_info_personal_info">个人信息</string>
+    <string name="user_info_company_info">公司信息</string>
+    <string name="please_login">请登录！</string>
+    <string name="title_activity_my_investment_detail">MyInvestmentDetailActivity</string>
+    <string name="title_activity_guide_page">GuidePageActivity</string>
+    <string name="title_activity_lock_setup">LockSetupActivity</string>
+    <string name="try_again">重试</string>
+    <string name="goon">继续</string>
+    <string name="confirm">确认</string>
+    <string name="title_activity_my_base">MyBaseActivity</string>
+    <string name="title_activity_lock">LockActivity</string>
+    <string name="title_activity_phone_change">PhoneChangeActivity</string>
+    <string name="title_activity_check_old_phone">CheckOldPhoneActivity</string>
+    <string name="title_activity_check_new_phone">CheckNewPhoneActivity</string>
+    <string name="title_activity_real_name_info">RealNameInfoActivity</string>
+    <string name="title_activity_recharge">RechargeActivity</string>
+    <string name="title_activity_yi_bao_register">YiBaoRegisterActivity</string>
+    <!-- 汇付托管 -->
+    <string name="yibao_register_title">汇付托管注册</string>
+    <string name="yibao_recharge_title">汇付充值</string>
+    <string name="yibao_withdraw_title">汇付提现</string>
+    <string name="yibao_bind_card_title">汇付绑定银行卡</string>
+    <string name="yibao_unbind_card_title">汇付解绑银行卡</string>
+    <string name="yibao_invest_title">汇付投资</string>
+    <string name="yibao_bug_title">汇付债权购买</string>
+    <string name="yibao_my_account_title">我的汇付账号</string>
+    <string name="title_activity_my_pay_account">MyPayAccountActivity</string>
+
+    <!-- 债权购买详情 -->
+    <string name="creditor_detail_credior_money">债权价值（元）</string>
+    <string name="creditor_buy_detail_title">债权购买详情</string>
+    <string name="creditor_buy_detail_expiration_time">到期时间:</string>
+    <string name="creditor_buy_detail_transfer_price">转让价格(元):</string>
+    <string name="creditor_buy_detail_predict_profit">预计盈利:</string>
+    <string name="creditor_buy_detail_refund_info">还款信息</string>
+   <!-- 债权转让详情 -->
+   <string name="creditor_transfer_detail_title">债权转让详情</string>
+   <string name="creditor_transfer_status_transfer">立即转让</string>
+   <string name="creditor_transfer_status_undo">撤销</string>
+   <string name="creditor_transfer_status_already">已转让</string>
+   <string name="creditor_transfer_coefficient_null">转让系数不能为空</string>
+   <string name="creditor_transfer_three_times">转让次数不能超过3次</string>
+   <string name="creditor_transfer_undo_three_times">已撤销3次，无法转让</string>
+   <string name="creditor_transfer_undo_succeed">撤销成功</string> 
+   <string name="creditor_transfer_transfer_succeed">转让成功</string> 
+   <string name="creditor_transfer_undo_title">是否确定撤销？</string> 
+   <string name="creditor_transfer_undo_subtitle">债权转让仅可撤销3次。</string> 
+   
+   
+   <!-- 我的投资详情 -->
+   <string name="invest_detail_title">我的投资详情</string>
+   <string name="invest_detail_to">至</string>
+   <string name="invest_detail_borrow_no">借款编号:</string>
+   <string name="invest_detail_apr">年利率:</string>
+   <string name="invest_detail_repay_type">还款方式:</string>
+   <string name="invest_detail_borrow_time">借款期限:</string>
+   <string name="invest_detail_borrow_detail">借款详情</string>
+   <string name="invest_detail_refund_detail">还款详情</string>
+   <string name="invest_detail_credior_money">债权价值（元）</string>
+   <string name="invest_detail_periods">待还/总期数</string>
+   <string name="invest_detail_invest_money">投资金额:</string>
+   <string name="invest_detail_sum_income">总收益:</string>
+   <string name="invest_detail_income_yes">已收收益:</string>
+   <string name="invest_detail_wait_capital">待收本金:</string>
+   <string name="invest_detail_aword_money">奖励金额:</string>
+   <string name="refund_principal">应收总额:</string>
+   <string name="refund_principal_yes">实收本金:</string>
+   <string name="refund_interest_yes">实收利息:</string>
+   <string name="refund_refund_time">预还款日:</string>
+    <string name="txt_pay_by">付款方式：</string>
+    <string name="txt_ordernumber">订单号：</string>
+
+    <string name="fmd_money_total">总充值￥%s元</string>
+    <string name="fmd_money">"￥%s元"</string>
+    <string name="recharge_detail_order_number">订单号：</string>
+    <string name="recharge_type">类型：</string>
+    <string name="recharge_paytype">支付方式：</string>
+    <string name="recharge_amount">充值金额：</string>
+    <string name="recharge_time">充值时间：</string>
+    <string name="recharge_remark">备注：</string>
+    <string name="recharge_manager_remark">管理备注：</string>
+
+    <!-- myborrowingactivity -->
+    <string name="myborrowingactivity_Iborrow">我的借款</string>
+    <string name="myborrowingItem_btn_repayment">还款</string>
+    <string name="myborrowingItem_tv_return_amount">应还金额</string>
+    <string name="myborrowingItem_tv_return_interest">实还利息</string>
+    <string name="myborrowingItem_tv_return_principal">实还本金</string>
+    <string name="myborrowingItem_tv_return_overdue">逾期天数</string>
+
+    <string name="myborrowingItem_head_tv_title">标题</string>
+    <string name="myborrowingItem_head_tv_loan_number">借款编号</string>
+    <string name="myborrowingItem_head_tv_rate">年利率</string>
+    <string name="myborrowingItem_head_tv_limit">借款期限</string>
+    <string name="myborrowingItem_head_tv_repayment">还款方式</string>
+    <string name="myborrowingItem_head_tv_borrowing">借款时间</string>
+    <string name="myborrowingItem_head_tv_loan_amount">借款金额</string>
+    <string name="myborrowingItem_head_tv_interest_payable">应付利息</string>
+    <string name="myborrowingItem_head_tv_loan_information">查看借款信息</string>
+
+    <string name="fmd_additional_apr">+%1$.2f%%</string>
+    <string name="fmd_bid_additional_apr">%1$s元+%2$s元</string>
+
+    <string name="minimum_transfer_unit">最小流转：</string>
+    <string name="limit_number">限投份数：</string>
+
+    <string name="fen">份</string>
+
+</resources>

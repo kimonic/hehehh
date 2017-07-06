@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_investment_title"
+        layout="@layout/activity_investment_title" />
+
+    <com.diyou.view.LoadingLayout
+        android:id="@+id/investmentdetailsactivity_loadinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.diyou.view.LoadingLayout>
+
+    <WebView
+        android:id="@+id/investment_webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/investmentdetailsactivity_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/investment_datails_calculator"
+            style="@style/button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/investment_datails_operation"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/investment_button"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/investment_immediate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/workFile/JAVA_HF_SanHeCaiFu_V5/app/src/main/res/layout/activity_investment_details.xml -->

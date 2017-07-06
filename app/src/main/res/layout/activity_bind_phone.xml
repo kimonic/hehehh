@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_bg"
+    tools:context=".PhoneBindActivity" >
+
+    <include
+        android:id="@+id/activity_update_phone_number_title_layout"
+        layout="@layout/layout_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/investment_fragment_item_bg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_phone_bind_num"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@color/white"
+            android:hint="@string/bind_phone_input_phone"
+            android:padding="8dp"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_phone_bind_number_next"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:text="@string/bind_phone_next"
+        android:textSize="16sp"
+         />
+
+</LinearLayout>
